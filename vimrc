@@ -7,7 +7,7 @@ set autoread
 " Height of the command bar
 set cmdheight=2
 
-" Highlight search results
+" Highlight all search results
 set hlsearch
 
 " Enable incremental search
@@ -15,6 +15,12 @@ set incsearch
 
 " Show linenumbers
 set number
+
+" Line wrap (number of cols)
+set textwidth=100
+
+" always show current position
+set ruler
 
 """""""""""""""""""""""""""""""""""""""""""""""""
 " Colors and Fonts
