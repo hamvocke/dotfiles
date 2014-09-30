@@ -5,7 +5,7 @@ ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that soh-my-zsh is loaded.
-ZSH_THEME="kphoen"
+ZSH_THEME="blinks"
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
@@ -45,6 +45,12 @@ plugins=(git battery command-not-found last-working-dir screen)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=$PATH:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/ham/dev/dmdeploy/gradle-1.7/bin
+export PATH=$PATH:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
 
+# use 256 color terminal
 export TERM=xterm-256color
+
+#------------------------------------------------------
+# Aliases
+#------------------------------------------------------
+#alias tmux='tmux -2'
