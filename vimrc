@@ -37,15 +37,23 @@ set hlsearch
 " Enable incremental search
 set incsearch
 
+" search is case-insensitive by default
+set ignorecase
+
 " Show linenumbers
 set number
 
 " Line wrap (number of cols)
-set lbr
-set tw=300
+set wrap	    " wrap lines only visually
+set linebreak	    " wrap only at valid characters
+set textwidth=0	    " prevent vim from inserting linebreaks
+set wrapmargin=0    "   in newly entered text
 
 " always show current position
 set ruler
+
+" show matching braces
+set showmatch
 
 """""""""""""""""""""""""""""""""""""""""""""""""
 " Backups, Swap Files
@@ -76,9 +84,10 @@ set smarttab
 
 " 1 tab == 4 spaces
 set shiftwidth=4
-set tabstop=4
+set softtabstop=4
 
 set ai "Auto indent
 set si "Smart indent
-set wrap " Wrap lines
 
+" modern backspace behavior
+set backspace=indent,eol,start
