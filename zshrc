@@ -5,7 +5,8 @@ ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that soh-my-zsh is loaded.
-ZSH_THEME="blinks"
+#ZSH_THEME="blinks"
+ZSH_THEME="kphoen"
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
@@ -54,3 +55,17 @@ export TERM=xterm-256color
 # Aliases
 #------------------------------------------------------
 #alias tmux='tmux -2'
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
+
+# add npm packages directory
+NPM_PACKAGES="${HOME}/.npm-packages"
+NODE_PATH="$NPM_PACKAGES/lib/node_modules:$NODE_PATH"
+
+PATH="$NPM_PACKAGES/bin:$PATH"
+# Unset manpath so we can inherit from /etc/manpath via the `manpath` command
+unset MANPATH 
+
+# delete if you already modified MANPATH elsewhere in your config
+MANPATH="$NPM_PACKAGES/share/man:$(manpath)"
