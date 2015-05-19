@@ -41,10 +41,19 @@ set incsearch
 set number
 
 " Line wrap (number of cols)
-set textwidth=100
+set lbr
+set tw=300
 
 " always show current position
 set ruler
+
+"""""""""""""""""""""""""""""""""""""""""""""""""
+" Backups, Swap Files
+"""""""""""""""""""""""""""""""""""""""""""""""""
+set nobackup
+set nowb
+set noswapfile
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""
 " Colors and Fonts
@@ -71,5 +80,5 @@ set tabstop=4
 
 set ai "Auto indent
 set si "Smart indent
-
+set wrap " Wrap lines
 
