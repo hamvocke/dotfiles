@@ -68,3 +68,6 @@ unset MANPATH
 
 # delete if you already modified MANPATH elsewhere in your config
 MANPATH="$NPM_PACKAGES/share/man:$(manpath)"
+
+# rubygems
+PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
