@@ -75,6 +75,8 @@ set encoding=utf8
 " Define standard filetype
 set ffs=unix,dos,mac
 
+colorscheme Tomorrow-Night-Bright
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""
 " Text and Indentation
