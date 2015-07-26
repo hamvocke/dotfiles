@@ -16,6 +16,10 @@ Plugin 'gmarik/Vundle.vim'
 " NERD tree - tree explorer
 Plugin 'scrooloose/nerdtree'
 
+" Base16 colorschemes
+Plugin 'chriskempson/base16-vim'
+
+
 " Keep Plugin commands between vundle#begin/end.
 
 " All of your Plugins must be added before the following line
@@ -75,7 +79,9 @@ set encoding=utf8
 " Define standard filetype
 set ffs=unix,dos,mac
 
-colorscheme Tomorrow-Night-Bright
+let base16colorspace=256  " Access colors present in 256 colorspace
+colorscheme base16-tomorrow
+set background=dark
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""
