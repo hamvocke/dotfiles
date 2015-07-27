@@ -79,8 +79,7 @@ set encoding=utf8
 " Define standard filetype
 set ffs=unix,dos,mac
 
-let base16colorspace=256  " Access colors present in 256 colorspace
-colorscheme base16-tomorrow
+colorscheme Tomorrow-Night
 set background=dark
 
 
