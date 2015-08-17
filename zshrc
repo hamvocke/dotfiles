@@ -58,6 +58,7 @@ BASE16_SHELL="$HOME/.dotfiles/base16-shell/base16-default.dark.sh"
 # Aliases
 #------------------------------------------------------
 #alias tmux='tmux -2'
+alias serve='python -m SimpleHTTPServer'
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
