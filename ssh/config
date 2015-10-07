@@ -1,0 +1,10 @@
+#Host <hostname>
+#	HostName <IP address>
+#	User <username>
+
+ControlMaster auto
+ControlPath /tmp/ssh_mux_%h_%p_%r
+ControlPersist 1h
+
+ServerAliveInterval 60
+ServerAliveCountMax 10
