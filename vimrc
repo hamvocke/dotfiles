@@ -19,6 +19,9 @@ Plugin 'scrooloose/nerdtree'
 " Base16 colorschemes
 Plugin 'chriskempson/base16-vim'
 
+" Ctrl-p
+Plugin 'kien/ctrlp.vim'
+
 
 " Keep Plugin commands between vundle#begin/end.
 
@@ -34,6 +37,10 @@ let mapleader=","       " leader is comma
 
 " turn off search highlight with ,-<space>
 nnoremap <leader><space> :nohlsearch<CR>
+
+" Invoke Ctrl-p with c-p
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""
@@ -120,3 +127,10 @@ filetype indent on	" enable filetype specific indentation
 nnoremap j gj
 nnoremap k gk
 
+
+"""""""""""""""""""""""""""""""""""""""""""""""""
+" Ctrl-p
+"""""""""""""""""""""""""""""""""""""""""""""""""
+let g:ctrlp_match_window = 'bottom,order:ttb'
+let g:ctrlp_switch_buffer = 0
+let g:ctrlp_working_path_mode = 'ra'
