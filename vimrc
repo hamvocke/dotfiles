@@ -26,6 +26,16 @@ Plugin 'chriskempson/base16-vim'
 call vundle#end()            " required
 filetype plugin indent on    " required
 
+
+"""""""""""""""""""""""""""""""""""""""""""""""""
+" Custom Keybindings
+"""""""""""""""""""""""""""""""""""""""""""""""""
+let mapleader=","       " leader is comma
+
+" turn off search highlight with ,-<space>
+nnoremap <leader><space> :nohlsearch<CR>
+
+
 """"""""""""""""""""""""""""""""""""""""""""""""
 " General Configuration
 """"""""""""""""""""""""""""""""""""""""""""""""
@@ -35,11 +45,8 @@ set autoread
 " Height of the command bar
 set cmdheight=2
 
-" Highlight all search results
-set hlsearch
-
-" Enable incremental search
-set incsearch
+set hlsearch	    " highlight search matches
+set incsearch	    " search while characters are entered
 
 " search is case-insensitive by default
 set ignorecase
@@ -47,17 +54,22 @@ set ignorecase
 " Show linenumbers
 set number
 
+set showcmd	" show last command in the bottom right
+
+set cursorline	" highlight current active line
+set ruler	" always show current position
+
 " Line wrap (number of cols)
 set wrap	    " wrap lines only visually
 set linebreak	    " wrap only at valid characters
 set textwidth=0	    " prevent vim from inserting linebreaks
 set wrapmargin=0    "   in newly entered text
 
-" always show current position
-set ruler
 
 " show matching braces
 set showmatch
+
+set wildmenu	    " visual autocomplete for command menu
 
 """""""""""""""""""""""""""""""""""""""""""""""""
 " Backups, Swap Files
@@ -93,8 +105,18 @@ set smarttab
 set shiftwidth=4
 set softtabstop=4
 
-set ai "Auto indent
-set si "Smart indent
+set ai " Auto indent
+set si " Smart indent
 
 " modern backspace behavior
 set backspace=indent,eol,start
+
+filetype indent on	" enable filetype specific indentation
+
+"""""""""""""""""""""""""""""""""""""""""""""""""
+" Movement
+"""""""""""""""""""""""""""""""""""""""""""""""""
+" move vertically by visual line (don't skip wrapped lines) 
+nnoremap j gj
+nnoremap k gk
+
