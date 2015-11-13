@@ -51,7 +51,7 @@ export PATH=$PATH:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/
 export TERM=xterm-256color
 
 # Base16 Shell
-BASE16_SHELL="$HOME/.dotfiles/base16-shell/base16-default.dark.sh"
+BASE16_SHELL="$HOME/.dotfiles/base16-shell/base16-ocean.dark.sh"
 [[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
 
 #------------------------------------------------------

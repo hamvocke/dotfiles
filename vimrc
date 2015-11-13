@@ -63,7 +63,6 @@ set number
 
 set showcmd	" show last command in the bottom right
 
-set cursorline	" highlight current active line
 set ruler	" always show current position
 
 " Line wrap (number of cols)
@@ -98,9 +97,12 @@ set encoding=utf8
 " Define standard filetype
 set ffs=unix,dos,mac
 
-colorscheme Tomorrow-Night
+let base16colorspace=256
+colorscheme base16-default
 set background=dark
 
+
+set cursorline	" highlight current active line
 
 """""""""""""""""""""""""""""""""""""""""""""""""
 " Text and Indentation
