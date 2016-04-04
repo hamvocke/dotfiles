@@ -105,6 +105,12 @@ set background=dark
 set cursorline	" highlight current active line
 
 """""""""""""""""""""""""""""""""""""""""""""""""
+" File Types
+"""""""""""""""""""""""""""""""""""""""""""""""""
+" recognize .md files as markdown files
+au BufNewFile,BufFilePre,BufRead *.md set filetype=markdown
+
+"""""""""""""""""""""""""""""""""""""""""""""""""
 " Text and Indentation
 """""""""""""""""""""""""""""""""""""""""""""""""
 " Use smart tabs
