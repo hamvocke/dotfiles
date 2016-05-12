@@ -7,7 +7,7 @@ A collection of my personal dotfiles. Here's a little preview of what it can loo
 
 Installation
 ------------
-Regardless of the way you want to install these dotfiles, your first step is to clone this repository:
+Your first step is to clone this repository:
 
     git clone git@github.com:hamvocke/dotfiles.git ~/.dotfiles
 
