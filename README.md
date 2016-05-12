@@ -9,7 +9,13 @@ Installation
 ------------
 Regardless of the way you want to install these dotfiles, your first step is to clone this repository:
 
+
+
     git clone git@github.com:hamvocke/dotfiles.git ~/.dotfiles
+
+If do you not have ssh key configured at github, try:
+
+    git clone https://github.com/hamvocke/dotfiles.git ~/.dotfiles
 
 ### Manual Installation
 Create symbolic links for the configurations you want to use, e.g.:
