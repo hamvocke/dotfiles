@@ -98,7 +98,7 @@ set encoding=utf8
 set ffs=unix,dos,mac
 
 let base16colorspace=256
-colorscheme base16-default
+colorscheme base16-default-dark
 set background=dark
 
 
