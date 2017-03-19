@@ -153,6 +153,9 @@ bar {
         status_command i3status
 }
 
+# focus should not follow mouse cursor
+focus_follows_mouse no
+
 ############
 #  Colors  #
 ############
