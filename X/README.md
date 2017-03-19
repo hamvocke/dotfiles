@@ -13,3 +13,6 @@ After installing the `.Xresources` (either manually or using `stow`) you need to
 ## Colors
 You can define your own colors in `.Xresources`. These colors will then be picked up by several applications, e.g. xterm/urxvt or i3. A good alternative is to simply grab a colorscheme you like from [Chris Kempson's Base16 repo](https://github.com/chriskempson/base16-xresources).
 
+
+## urxvt pasting with `Ctrl-Shift-V`
+I've modified urxvt to disable `iso14755` mode to allow pasting with `C-V` (i.e. `Ctrl-Shift-V`) instead of `C-M-v`. To make use of this install `urxvt-perls` on your system.
