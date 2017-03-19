@@ -1,0 +1,4 @@
+#!/bin/sh
+
+exec /usr/bin/Xorg -nolisten tcp "$@" vt$XDG_VTNR
+
