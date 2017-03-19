@@ -185,15 +185,15 @@ gaps outer 0
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-    height 24
+    height 28
     position top
     status_command i3status
-    font pango:DejaVu Sans Mono 10
+    font pango:DejaVu Sans Mono, FontAwesome 10
     strip_workspace_numbers yes
     colors {
 	background $bg
 	separator $shade
-	statusline $fg
+	statusline $shade
 
 	# workspace indicators	border	backgr.	text
 	focused_workspace	$bg	$bg	$fg
