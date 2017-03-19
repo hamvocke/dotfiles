@@ -171,8 +171,7 @@ client.urgent           $bg     $bg     $shade	$light	    $urgent
 client.placeholder	$bg	$bg	$shade	$light	    $bg
 
 # set window borders
-for_window [class="^.*"] border normal 2
-for_window [class="URxvt"] border pixel 1
+for_window [class="^.*"] border pixel 1
 
 # set gaps (i3-gaps only)
 gaps inner 10
