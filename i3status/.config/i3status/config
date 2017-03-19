@@ -9,18 +9,21 @@
 general {
         colors = true
         interval = 5
+	color_good = "#a3be8c"
+	color_degraded = "#d08770"
+	color_bad = "#bf616a"
 }
 
+
 order += "disk /"
-order += "run_watch DHCP"
 order += "wireless wlp1s0"
 order += "battery 0"
 order += "load"
 order += "tztime local"
 
 wireless wlp1s0 {
-        format_up = "W: (%quality at %essid) %ip"
-        format_down = "W: down"
+        format_up = "  %quality, %essid, %ip"
+        format_down = "  down"
 }
 
 ethernet eth0 {
@@ -30,7 +33,12 @@ ethernet eth0 {
 }
 
 battery 0 {
+	integer_battery_capacity = true
         format = "%status %percentage %remaining"
+	threshold_type = "percentage"
+	low_threshold = 15
+	status_bat = ""
+	status_chr = ""
 }
 
 run_watch DHCP {
@@ -42,13 +50,13 @@ run_watch VPN {
 }
 
 tztime local {
-        format = "%Y-%m-%d %H:%M:%S"
+        format = " %Y-%m-%d   %H:%M:%S"
 }
 
 load {
-        format = "%1min"
+        format = " %1min"
 }
 
 disk "/" {
-        format = "%avail"
+        format = " %avail"
 }
