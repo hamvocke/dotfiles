@@ -18,7 +18,8 @@ general {
 order += "disk /"
 order += "wireless wlp1s0"
 order += "battery 0"
-order += "load"
+order += "cpu_usage"
+order += "volume master"
 order += "tztime local"
 
 wireless wlp1s0 {
@@ -54,8 +55,18 @@ tztime local {
         format = " %d.%m.%Y   %H:%M"
 }
 
-load {
-        format = " %1min"
+cpu_usage {
+	max_threshold = 95
+	degraded_threshold = 80
+        format = "   %usage"
+}
+
+volume master {
+	format = "   %volume"
+        format_muted = "   (muted) %volume"
+        device = "default"
+        mixer = "Master"
+        mixer_idx = 0
 }
 
 disk "/" {
