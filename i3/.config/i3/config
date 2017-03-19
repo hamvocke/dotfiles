@@ -160,13 +160,14 @@ set_from_resource $fg	    color2 #2AA198
 set_from_resource $bg	    color0 #1F2D3A
 set_from_resource $shade    color8 #ffffff
 set_from_resource $light    color5 #ffffff
+set_from_resource $urgent   color1 #ffffff
 
 
 # set window colors	border	backgr.	text	indicator   child_border
 client.focused          $bg     $bg     $fg	$light	    $fg
 client.focused_inactive $bg     $bg     $shade	$light	    $shade
 client.unfocused        $bg	$bg     $shade	$light	    $shade
-client.urgent           $bg     $bg     $shade	$light	    $bg
+client.urgent           $bg     $bg     $shade	$light	    $urgent
 client.placeholder	$bg	$bg	$shade	$light	    $bg
 
 # set window borders
@@ -187,8 +188,17 @@ gaps outer 0
 bar {
     position top
     status_command i3status
+    font pango:DejaVu Sans Mono 10
+    strip_workspace_numbers yes
     colors {
 	background $bg
+	separator $shade
 	statusline $fg
+
+	# workspace indicators	border	backgr.	text
+	focused_workspace	$bg	$bg	$fg
+	inactive_workspace	$bg	$bg	$shade
+	urgent_workspace	$bg	$bg	$urgent
     }
 }
+
