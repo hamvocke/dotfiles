@@ -1,4 +1,4 @@
-#i3
+# X configuration
 
 Config files for X
 
