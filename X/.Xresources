@@ -71,4 +71,4 @@ URxvt*scrollBar: false
 URxvt*internalBorder: 2
 URxvt*borderColor: base00
 
-*font: xft:monospace:size=12
+*font: xft:monospace:size=11
