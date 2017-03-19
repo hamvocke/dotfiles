@@ -1,4 +1,4 @@
-#i3
+# i3 Configuration
 
 Config files for i3 window manager
 
