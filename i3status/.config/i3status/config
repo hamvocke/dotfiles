@@ -11,17 +11,14 @@ general {
         interval = 5
 }
 
-order += "ipv6"
 order += "disk /"
 order += "run_watch DHCP"
-order += "run_watch VPN"
-order += "wireless wlan0"
-order += "ethernet eth0"
+order += "wireless wlp1s0"
 order += "battery 0"
 order += "load"
 order += "tztime local"
 
-wireless wlan0 {
+wireless wlp1s0 {
         format_up = "W: (%quality at %essid) %ip"
         format_down = "W: down"
 }
