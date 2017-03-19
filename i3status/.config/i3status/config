@@ -41,6 +41,7 @@ battery 0 {
 	low_threshold = 15
 	status_bat = ""
 	status_chr = ""
+	status_full = ""
 }
 
 run_watch DHCP {
