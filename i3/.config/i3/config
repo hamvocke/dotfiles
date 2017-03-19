@@ -151,6 +151,20 @@ bindsym $mod+r mode "resize"
 # focus should not follow mouse cursor
 focus_follows_mouse no
 
+
+##########################
+#  Special Key Bindings  #
+##########################
+
+bindsym XF86AudioRaiseVolume exec amixer -q sset Master 1%+
+bindsym XF86AudioLowerVolume exec amixer -q sset Master 1%-
+bindsym XF86AudioMute exec amixer -q sset Master toggle
+
+bindsym XF86AudioPlay exec mpc toggle
+bindsym XF86AudioPrev exec mpc prev
+bindsym XF86AudioNext exec mpc next
+
+
 ############
 #  Colors  #
 ############
