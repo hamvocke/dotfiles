@@ -223,3 +223,6 @@ bar {
 
 # set wallpaper using nitrogen
 exec --no-startup-id nitrogen --restore
+
+# toggle between keyboard layouts
+exec --no-startup-id setxkbmap us,de -option 'grp:alt_shift_toggle'
