@@ -25,6 +25,9 @@ Plugin 'kien/ctrlp.vim'
 " Elixir syntax highlighting
 Plugin 'elixir-lang/vim-elixir'
 
+" Autocompletion
+Plugin 'valloric/youcompleteme'
+
 
 " Keep Plugin commands between vundle#begin/end.
 
