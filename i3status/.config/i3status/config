@@ -17,6 +17,7 @@ general {
 
 order += "disk /"
 order += "wireless wlp1s0"
+order += "run_watch VPN"
 order += "battery 0"
 order += "cpu_usage"
 order += "volume master"
