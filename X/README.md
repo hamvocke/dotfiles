@@ -9,6 +9,8 @@ After installing the `.Xresources` (either manually or using `stow`) you need to
     
     xrdb ~/.Xresources
 
+For locking the screen automatically the configuration relies on `xautolock` (will be started automatically in the `.xinitrc`) so make sure you install it accordingly or configure a different locking mechanism (like `xscreensaver`).
+
 
 ## Colors
 You can define your own colors in `.Xresources`. These colors will then be picked up by several applications, e.g. xterm/urxvt or i3. A good alternative is to simply grab a colorscheme you like from [Chris Kempson's Base16 repo](https://github.com/chriskempson/base16-xresources).
