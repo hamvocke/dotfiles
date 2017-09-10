@@ -61,6 +61,7 @@ BASE16_SHELL=$HOME/.config/base16-shell/
 alias serve='python -m http.server'
 alias de='setxkbmap de'
 alias us='setxkbmap us'
+alias gpg_reload='gpg-connect-agent reloadagent /bye'
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
