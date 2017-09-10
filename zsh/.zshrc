@@ -58,7 +58,9 @@ BASE16_SHELL=$HOME/.config/base16-shell/
 # Aliases
 #------------------------------------------------------
 #alias tmux='tmux -2'
-alias serve='python -m SimpleHTTPServer'
+alias serve='python -m http.server'
+alias de='setxkbmap de'
+alias us='setxkbmap us'
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
