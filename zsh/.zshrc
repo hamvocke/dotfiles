@@ -63,6 +63,10 @@ alias de='setxkbmap de'
 alias us='setxkbmap us'
 alias gpg_reload='gpg-connect-agent reloadagent /bye'
 
+whatsonport() {
+    lsof -i tcp:$1 
+}
+
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
