@@ -40,7 +40,7 @@ ZSH_THEME="simple"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git battery command-not-found last-working-dir screen archlinux themes)
+plugins=(git command-not-found last-working-dir archlinux themes)
 
 source $ZSH/oh-my-zsh.sh
 
