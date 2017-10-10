@@ -61,7 +61,6 @@ BASE16_SHELL=$HOME/.config/base16-shell/
 alias serve='python -m http.server'
 alias de='setxkbmap de'
 alias us='setxkbmap us'
-alias gpg_reload='gpg-connect-agent reloadagent /bye'
 
 whatsonport() {
     lsof -i tcp:$1
