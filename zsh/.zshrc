@@ -64,7 +64,13 @@ alias us='setxkbmap us'
 alias gpg_reload='gpg-connect-agent reloadagent /bye'
 
 whatsonport() {
-    lsof -i tcp:$1 
+    lsof -i tcp:$1
+}
+
+gpg_restart() {
+    sudo killall gpg-agent
+    gpg-agent --daemon  ~/.gpg-agent-info --enable-ssh-support
+    source ~/.gpg-agent-info
 }
 
 ### Added by the Heroku Toolbelt
