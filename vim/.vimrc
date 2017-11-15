@@ -25,9 +25,6 @@ Plugin 'kien/ctrlp.vim'
 " Elixir syntax highlighting
 Plugin 'elixir-lang/vim-elixir'
 
-" Python autocompletion
-Plugin 'davidhalter/jedi-vim'
-
 
 " Keep Plugin commands between vundle#begin/end.
 
