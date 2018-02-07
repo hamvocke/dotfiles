@@ -25,6 +25,9 @@ Plugin 'kien/ctrlp.vim'
 " Elixir syntax highlighting
 Plugin 'elixir-lang/vim-elixir'
 
+" Vimwiki
+Plugin 'vimwiki/vimwiki'
+
 
 " Keep Plugin commands between vundle#begin/end.
 
@@ -147,3 +150,10 @@ nnoremap k gk
 let g:ctrlp_match_window = 'bottom,order:ttb'
 let g:ctrlp_switch_buffer = 0
 let g:ctrlp_working_path_mode = 'ra'
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""
+" vimwiki
+"""""""""""""""""""""""""""""""""""""""""""""""""
+" automatically generate HTML files
+let g:vimwiki_list = [{'path': '~/vimwiki/', 'auto_export': 1}]
