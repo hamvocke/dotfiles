@@ -75,4 +75,4 @@ URxvt*keysym.C-V: perl:clipboard:paste
 URxvt*iso14755: False
 URxvt*perl-ext-common: default,clipboard
 
-*font: xft:monospace:size=11
+*font: xft:fira code:size=11
