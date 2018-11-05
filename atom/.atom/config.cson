@@ -1,0 +1,53 @@
+"*":
+  "activate-power-mode":
+    particles:
+      size: {}
+      spawnCount: {}
+      totalCount: {}
+    screenShake: {}
+  "asciidoc-preview":
+    scrollMode: false
+  "atom-beautify":
+    general: {}
+  "autocomplete-plus": {}
+  autosave:
+    enabled: true
+  core:
+    autoHideMenuBar: true
+    closeDeletedFileTabs: true
+    excludeVcsIgnoredPaths: false
+    telemetryConsent: "no"
+  editor:
+    fontFamily: "Fira Code"
+    fontSize: 16
+    invisibles: {}
+    showIndentGuide: true
+    showInvisibles: true
+    softWrap: true
+    softWrapAtPreferredLineLength: true
+    tabLength: 4
+  emmet: {}
+  "exception-reporting":
+    userId: "f9114f32-2564-fcf9-f3c5-472db705cfbd"
+  "fuzzy-finder":
+    ignoredNames: [
+      ".git"
+      "node_modules"
+    ]
+  jshint:
+    supportLintingJsx: true
+  linter: {}
+  "linter-eslint":
+    lintHtmlFiles: true
+  "linter-flake8":
+    executablePath: "/usr/bin/flake8"
+    flakeErrors: true
+  "linter-ui-default":
+    panelHeight: 283
+  "one-dark-ui": {}
+  "python-tools": {}
+  "tree-view":
+    hideVcsIgnoredFiles: true
+  "vim-mode": {}
+  welcome:
+    showOnStartup: false
