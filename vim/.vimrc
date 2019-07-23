@@ -167,3 +167,6 @@ let g:vimwiki_list = [{'path': '~/vimwiki/', 'auto_export': 1}]
 """""""""""""""""""""""""""""""""""""""""""""""""
 " show hidden files
 let NERDTreeShowHidden=1
+
+" open/close NERDTree using Leader-f (,-f)
+nnoremap <Leader>f :NERDTreeToggle<Enter>
