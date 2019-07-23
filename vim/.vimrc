@@ -160,3 +160,10 @@ let g:ctrlp_working_path_mode = 'ra'
 """""""""""""""""""""""""""""""""""""""""""""""""
 " automatically generate HTML files
 let g:vimwiki_list = [{'path': '~/vimwiki/', 'auto_export': 1}]
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""
+" NERDTree
+"""""""""""""""""""""""""""""""""""""""""""""""""
+" show hidden files
+let NERDTreeShowHidden=1
