@@ -6,26 +6,27 @@ Xft.autohint: false
 Xft.hintstyle: hintslight
 Xft.lcdfilter: lcddefault
 
+
 ! ----------------------------
-!  Colors (Base16 Ocean Dark)
+!  Colors (Horizon Dark)
 ! ----------------------------
 
-#define base00 #2b303b
-#define base01 #343d46
-#define base02 #4f5b66
-#define base03 #65737e
-#define base04 #a7adba
-#define base05 #c0c5ce
-#define base06 #dfe1e8
-#define base07 #eff1f5
-#define base08 #bf616a
-#define base09 #d08770
-#define base0A #ebcb8b
-#define base0B #a3be8c
-#define base0C #96b5b4
-#define base0D #8fa1b3
-#define base0E #b48ead
-#define base0F #ab7967
+#define base00 #1C1E26
+#define base01 #232530
+#define base02 #2E303E
+#define base03 #6F6F70
+#define base04 #9DA0A2
+#define base05 #CBCED0
+#define base06 #DCDFE4
+#define base07 #E3E6EE
+#define base08 #E93C58
+#define base09 #E58D7D
+#define base0A #EFB993
+#define base0B #EFAF8E
+#define base0C #24A8B4
+#define base0D #DF5273
+#define base0E #B072D1
+#define base0F #E4A382
 
 *.foreground:   base05
 #ifdef background_opacity
@@ -63,16 +64,17 @@ Xft.lcdfilter: lcddefault
 *.color20:      base04
 *.color21:	base06
 
+
 ! -----------------
 !  URxvt settings
 ! -----------------
 
 URxvt*scrollBar: false
-URxvt*internalBorder: 2
+URxvt*internalBorder: 10
 URxvt*borderColor: base00
 
 URxvt*keysym.C-V: perl:clipboard:paste
 URxvt*iso14755: False
 URxvt*perl-ext-common: default,clipboard
 
-*font: xft:fira code:size=11
+*font: xft:fira code:size=12

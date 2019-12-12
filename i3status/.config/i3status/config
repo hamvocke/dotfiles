@@ -9,9 +9,9 @@
 general {
         colors = true
         interval = 5
-	color_good = "#a3be8c"
-	color_degraded = "#d08770"
-	color_bad = "#bf616a"
+	color_good = "#efaf8e"
+	color_degraded = "#efb993"
+	color_bad = "#e93c58"
 }
 
 
@@ -24,8 +24,8 @@ order += "volume master"
 order += "tztime local"
 
 wireless wlp1s0 {
-        format_up = "  %quality, %essid, %ip"
-        format_down = "  down"
+        format_up = "%quality, %essid, %ip"
+        format_down = "down"
 }
 
 ethernet eth0 {
@@ -60,12 +60,12 @@ tztime local {
 cpu_usage {
 	max_threshold = 95
 	degraded_threshold = 80
-        format = "   %usage"
+        format = " %usage"
 }
 
 volume master {
-	format = "   %volume"
-        format_muted = "   (muted) %volume"
+	format = " %volume"
+        format_muted = " (muted) %volume"
         device = "default"
         mixer = "Master"
         mixer_idx = 0

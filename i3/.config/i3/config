@@ -170,22 +170,24 @@ bindsym XF86AudioNext exec mpc next
 ############
 
 # set colors from .Xresources (with fallback)
-set_from_resource $fg	    color2 #2AA198
-set_from_resource $bg	    color0 #1F2D3A
-set_from_resource $shade    color8 #ffffff
-set_from_resource $light    color5 #ffffff
-set_from_resource $urgent   color1 #ffffff
+set_from_resource $fg           color7 #2AA198
+set_from_resource $bg           color0 #1F2D3A
+set_from_resource $shade        color8 #ffffff
+set_from_resource $light        color21 #ffffff
+set_from_resource $urgent       color1 #ffffff
+set_from_resource $highlight    color4 #ffffff
 
 
 # set window colors	border	backgr.	text	indicator   child_border
-client.focused          $bg     $bg     $fg	$light	    $fg
-client.focused_inactive $bg     $bg     $shade	$light	    $shade
-client.unfocused        $bg	$bg     $shade	$light	    $shade
-client.urgent           $bg     $bg     $shade	$light	    $urgent
+client.focused          $fg     $bg     $fg	$light	    $highlight
+client.focused_inactive $bg     $bg     $shade	$light	    $bg
+client.unfocused        $bg	$bg     $shade	$light	    $bg
+client.urgent           $urgent $urgent $shade	$light	    $urgent
 client.placeholder	$bg	$bg	$shade	$light	    $bg
+client.background       $bg
 
 # set window borders
-for_window [class="^.*"] border pixel 1
+for_window [class="^.*"] border pixel 2
 
 # set gaps (i3-gaps only)
 gaps inner 10
