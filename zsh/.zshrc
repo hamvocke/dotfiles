@@ -40,7 +40,7 @@ ZSH_THEME="simple"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git last-working-dir archlinux themes)
+plugins=(git last-working-dir themes)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -61,7 +61,6 @@ BASE16_SHELL=$HOME/.config/base16-shell/
 #------------------------------------------------------
 # Aliases
 #------------------------------------------------------
-#alias tmux='tmux -2'
 alias serve='python -m http.server'
 alias de='setxkbmap de'
 alias us='setxkbmap us'
@@ -75,23 +74,6 @@ gpg_restart() {
     gpg-agent --daemon  ~/.gpg-agent-info --enable-ssh-support
     source ~/.gpg-agent-info
 }
-
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
-
-# add npm packages directory
-NPM_PACKAGES="${HOME}/.npm-packages"
-NODE_PATH="$NPM_PACKAGES/lib/node_modules:$NODE_PATH"
-
-PATH="$NPM_PACKAGES/bin:$PATH"
-# Unset manpath so we can inherit from /etc/manpath via the `manpath` command
-unset MANPATH
-
-# delete if you already modified MANPATH elsewhere in your config
-MANPATH="$NPM_PACKAGES/share/man:$(manpath)"
-
-# rubygems
-PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
 
 # load OS specific config
 case `uname` in
