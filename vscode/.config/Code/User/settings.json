@@ -2,5 +2,11 @@
     "window.menuBarVisibility": "toggle",
     "workbench.colorTheme": "Horizon",
     "python.pythonPath": "/usr/bin/python3",
-    "editor.renderControlCharacters": true
+    "editor.renderControlCharacters": true,
+    "telemetry.enableTelemetry": false,
+    "telemetry.enableCrashReporter": false,
+    "editor.fontLigatures": true,
+    "editor.fontFamily": "'Fira Code', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+    "editor.fontSize": 16,
+    "files.autoSave": "onFocusChange"
 }
