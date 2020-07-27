@@ -4,7 +4,7 @@ dotfiles
 A collection of my personal dotfiles. 
 
 Here's a little preview of what it looks like with [base16-shell](https://github.com/chriskempson/base16-shell)'s _Horizon_ theme enabled.
-**tmux**
+
 
 ![tmux screenshot](screenshot.png)
 

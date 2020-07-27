@@ -190,8 +190,8 @@ client.background       $bg
 for_window [class="^.*"] border pixel 2
 
 # set gaps (i3-gaps only)
-gaps inner 10
-gaps outer 0
+#gaps inner 10
+#gaps outer 0
 
 
 ################
