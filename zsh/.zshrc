@@ -64,6 +64,8 @@ BASE16_SHELL=$HOME/.config/base16-shell/
 alias serve='python -m http.server'
 alias de='setxkbmap de'
 alias us='setxkbmap us'
+alias fd=fdfind
+alias bat=batcat
 
 whatsonport() {
     lsof -i tcp:$1
