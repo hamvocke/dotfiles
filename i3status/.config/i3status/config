@@ -16,14 +16,14 @@ general {
 
 
 order += "disk /"
-order += "wireless wlp1s0"
+order += "wireless wlp0s20f3"
 order += "run_watch VPN"
 order += "battery 0"
 order += "cpu_usage"
 order += "volume master"
 order += "tztime local"
 
-wireless wlp1s0 {
+wireless wlp0s20f3 {
         format_up = "%quality, %essid, %ip"
         format_down = "down"
 }
