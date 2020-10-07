@@ -14,3 +14,8 @@ export GPG_TTY=$(tty)
 
 # Refresh gpg-agent tty in case user switches into an X session
 gpg-connect-agent updatestartuptty /bye >/dev/null
+
+
+# Ubuntu-specific aliases for fd, bat
+alias fd=fdfind
+alias bat=batcat
