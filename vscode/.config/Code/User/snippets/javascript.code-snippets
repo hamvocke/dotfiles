@@ -4,7 +4,8 @@
 		"prefix": "should",
 		"body": [
 			"test(\"should $1\", () => {",
-			"    $2"
+			"  $2",
+                        "}"
 		],
 		"description": "add a jest test case"
 	}
