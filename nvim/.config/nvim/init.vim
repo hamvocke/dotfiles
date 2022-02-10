@@ -2,26 +2,16 @@
 " Setup vimplug for plugin management
 """"""""""""""""""""""""""""""""""""""""""""""""
 call plug#begin(stdpath("data") . '/plugged')
- " Plugin Section
  Plug 'SirVer/ultisnips'
  Plug 'honza/vim-snippets'
  Plug 'scrooloose/nerdtree'
  Plug 'preservim/nerdcommenter'
  Plug 'mhinz/vim-startify'
  Plug 'chriskempson/base16-vim'
+ Plug 'kien/ctrlp.vim'
+ Plug 'elixir-lang/vim-elixir'
+ Plug 'vimwiki/vimwiki'
 call plug#end()
-
-" Base16 colorschemes
-"Plugin 'chriskempson/base16-vim'
-
-" Ctrl-p
-"Plugin 'kien/ctrlp.vim'
-
-" Elixir syntax highlighting
-"Plugin 'elixir-lang/vim-elixir'
-
-" Vimwiki
-"Plugin 'vimwiki/vimwiki'
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""
