@@ -2,17 +2,14 @@
 " Setup vimplug for plugin management
 """"""""""""""""""""""""""""""""""""""""""""""""
 call plug#begin(stdpath("data") . '/plugged')
- Plug 'SirVer/ultisnips'
- Plug 'honza/vim-snippets'
- Plug 'scrooloose/nerdtree'
- Plug 'preservim/nerdcommenter'
- Plug 'mhinz/vim-startify'
- Plug 'chriskempson/base16-vim'
- Plug 'kien/ctrlp.vim'
- Plug 'elixir-lang/vim-elixir'
- Plug 'vimwiki/vimwiki'
+  Plug 'scrooloose/nerdtree'
+  Plug 'mhinz/vim-startify'
+  Plug 'chriskempson/base16-vim'
+  Plug 'elixir-lang/vim-elixir'
+  Plug 'vimwiki/vimwiki'
+  Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+  Plug 'junegunn/fzf.vim'
 call plug#end()
-
 
 """""""""""""""""""""""""""""""""""""""""""""""""
 " Custom Keybindings
@@ -22,10 +19,20 @@ let mapleader=","       " leader is comma
 " turn off search highlight with ,-<space>
 nnoremap <leader><space> :nohlsearch<CR>
 
-" Invoke Ctrl-p with c-p
-let g:ctrlp_map = '<c-p>'
-let g:ctrlp_cmd = 'CtrlP'
+" search file history with ,-e (fzf.vim)
+nnoremap <leader>e :History<CR>
 
+" search all files with ,-p (fzf.vim)
+nnoremap <leader>p :Files<CR>
+
+" search git commits with ,-c (fzf.vim)
+nnoremap <leader>c :Commits<CR>
+
+" search within files and code (using ripgrep) ,-f (fzf.vim)
+nnoremap <Leader>f :Rg<CR>
+
+" open/close file browser with ,-l (NERDTree)
+nnoremap <Leader>l :NERDTreeToggle<CR>
 
 """"""""""""""""""""""""""""""""""""""""""""""""
 " General Configuration
@@ -47,11 +54,12 @@ set number
 set showcmd	" show last command in the bottom right
 
 set ruler	" always show current position
-set scrolloff
+
 " Line wrap (number of cols)
 set wrap	    " wrap lines only visually
 set linebreak	    " wrap only at valid characters
 set textwidth=0	    " prevent vim from inserting linebreaks
+
 set wrapmargin=0    "   in newly entered text
 
 
@@ -124,13 +132,6 @@ nnoremap j gj
 nnoremap k gk
 
 
-"""""""""""""""""""""""""""""""""""""""""""""""""
-" Ctrl-p
-"""""""""""""""""""""""""""""""""""""""""""""""""
-let g:ctrlp_match_window = 'bottom,order:ttb'
-let g:ctrlp_switch_buffer = 0
-let g:ctrlp_working_path_mode = 'ra'
-
 
 """""""""""""""""""""""""""""""""""""""""""""""""
 " vimwiki
@@ -145,5 +146,3 @@ let g:vimwiki_list = [{'path': '~/vimwiki/', 'auto_export': 1}]
 " show hidden files
 let NERDTreeShowHidden=1
 
-" open/close NERDTree using Leader-f (,-f)
-nnoremap <Leader>f :NERDTreeToggle<Enter>
