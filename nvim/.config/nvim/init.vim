@@ -3,7 +3,6 @@
 """"""""""""""""""""""""""""""""""""""""""""""""
 call plug#begin(stdpath("data") . '/plugged')
   Plug 'scrooloose/nerdtree'
-  Plug 'mhinz/vim-startify'
   Plug 'chriskempson/base16-vim'
   Plug 'elixir-lang/vim-elixir'
   Plug 'vimwiki/vimwiki'
