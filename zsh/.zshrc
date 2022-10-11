@@ -40,12 +40,12 @@ ZSH_THEME="simple"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git last-working-dir themes)
+plugins=(git themes)
 
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=$PATH:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:~/.dotnet
+export PATH=$PATH:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:~/.dotnet:~/.local/bin
 
 # use 256 color terminal
 export TERM=xterm-256color
@@ -65,9 +65,10 @@ alias serve='python -m http.server'
 alias de='setxkbmap de'
 alias us='setxkbmap us'
 
-if ! [ -x "$(command -v nvim)" ]; then
+if [ -x "$(command -v nvim)" ]; then
     alias vim='nvim'
 fi
+
 #------------------------------------------------------
 # Functions
 #------------------------------------------------------
@@ -76,7 +77,6 @@ fi
 whatsonport() {
     lsof -i tcp:$1
 }
-
 
 
 # load OS specific config
@@ -101,7 +101,7 @@ export LANG=en_US.UTF-8
 #------------------------------------------------------
 
 # add fzf keybindings and autocompletion
-if ! [ -x "$(command -v fzf)" ]; then
+if [ -x "$(command -v fzf)" ]; then
     source /usr/share/doc/fzf/examples/key-bindings.zsh
     source /usr/share/doc/fzf/examples/completion.zsh
 fi
