@@ -65,6 +65,10 @@ alias serve='python -m http.server'
 alias de='setxkbmap de'
 alias us='setxkbmap us'
 
+# print current week number
+alias week='date +%V'
+
+# use nvim if available
 if [ -x "$(command -v nvim)" ]; then
     alias vim='nvim'
 fi
