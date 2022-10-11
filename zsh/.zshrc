@@ -65,15 +65,19 @@ alias serve='python -m http.server'
 alias de='setxkbmap de'
 alias us='setxkbmap us'
 
+if ! [ -x "$(command -v nvim)" ]; then
+    alias vim='nvim'
+fi
+#------------------------------------------------------
+# Functions
+#------------------------------------------------------
+
+# Find out what's running on a given port
 whatsonport() {
     lsof -i tcp:$1
 }
 
-gpg_restart() {
-    sudo killall gpg-agent
-    gpg-agent --daemon  ~/.gpg-agent-info --enable-ssh-support
-    source ~/.gpg-agent-info
-}
+
 
 # load OS specific config
 case `uname` in
@@ -88,9 +92,13 @@ case `uname` in
   ;;
 esac
 
+
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
+#------------------------------------------------------
+# Keybindings, Autocomplete
+#------------------------------------------------------
 
 # add fzf keybindings and autocompletion
 if ! [ -x "$(command -v fzf)" ]; then
