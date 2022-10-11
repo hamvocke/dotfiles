@@ -90,3 +90,11 @@ esac
 
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
+
+
+# add fzf keybindings and autocompletion
+if ! [ -x "$(command -v fzf)" ]; then
+    source /usr/share/doc/fzf/examples/key-bindings.zsh
+    source /usr/share/doc/fzf/examples/completion.zsh
+fi
+
