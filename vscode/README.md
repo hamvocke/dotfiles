@@ -1,4 +1,4 @@
-# tmux Configuration
+# Visual Studio Code Configuration
 
 Config files for Visual Studio Code
 
