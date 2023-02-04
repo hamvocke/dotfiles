@@ -1,0 +1,18 @@
+[user]
+    name = Ham Vocke
+    email = ham@hamvocke.com
+[init]
+    defaultBranch = main
+[alias]
+    c = commit -v
+    co = checkout
+    cob = checkout -b
+    s = status
+    br = branch
+    d = diff
+    dd = diff --cached`
+    l = git log --oneline --graph
+    cp = cherry-pick
+    ps = push
+    pl = pull
+    pb = pull --rebase
