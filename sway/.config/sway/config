@@ -46,7 +46,7 @@ input type:touchpad {
     natural_scroll enabled
 }
 
-input type:mouse {
+input type:pointer {
     natural_scroll enabled
 }
 
