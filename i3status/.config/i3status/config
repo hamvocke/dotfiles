@@ -9,22 +9,22 @@
 general {
         colors = true
         interval = 5
-	color_good = "#efaf8e"
-	color_degraded = "#efb993"
-	color_bad = "#e93c58"
+	color_good = "#EFAF8E"
+	color_degraded = "#EF8993"
+	color_bad = "#DF5273"
 }
 
 
-order += "disk /"
-order += "wireless wlp0s20f3"
-order += "run_watch VPN"
+# order += "disk /"
+order += "wireless wlp0s20f3" # use name of your network device (check iwconfig)
+# order += "run_watch VPN"
 order += "battery 0"
 order += "cpu_usage"
 order += "volume master"
 order += "tztime local"
 
 wireless wlp0s20f3 {
-        format_up = "%quality, %essid, %ip"
+        format_up = "%quality, %essid"
         format_down = "down"
 }
 
@@ -54,7 +54,7 @@ run_watch VPN {
 }
 
 tztime local {
-        format = " %d.%m.%Y   %H:%M"
+        format = " %d.%m.%y  %H:%M"
 }
 
 cpu_usage {
