@@ -46,6 +46,10 @@ input type:touchpad {
     natural_scroll enabled
 }
 
+input type:mouse {
+    natural_scroll enabled
+}
+
 ################
 # KEY BINDINGS #
 ################
