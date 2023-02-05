@@ -202,6 +202,9 @@ bindsym $mod+r mode "resize"
 # Colors & Bling #
 ##################
 
+# set wallpaper to whatever is at ~/wallpaper.png
+output * bg ~/wallpaper.png stretch
+
 # Show gaps around windows. Let that wallpaper shine through a bit!
 gaps inner 10
 
