@@ -16,3 +16,6 @@ The status bar on top is defined in the `bar {}` declaration. It works well with
 
 ## Fonts
 I'm setting special fonts (e.g. `Fira Code`) in this configuration that you might have to install first. If you install the Fira Code flavor from [Nerd Fonts](https://www.nerdfonts.com/), you'll automatically get all the icon glyphs required for the status bar.
+
+## Display Brightness
+I've set up brightness keys to control your display's brightness via `brightnessctl`. Make sure to [install it](https://github.com/Hummer12007/brightnessctl/) if you want to use this functionality.

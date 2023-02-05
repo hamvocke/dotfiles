@@ -119,6 +119,16 @@ bindsym $mod+space focus mode_toggle
 # focus the parent container
 bindsym $mod+a focus parent
 
+# volume controls
+bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5%
+bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -5%
+bindsym XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
+bindsym XF86AudioMicMute exec pactl set-source-mute @DEFAULT_SOURCE@ toggle
+
+# brightness controls
+bindsym --locked XF86MonBrightnessUp exec --no-startup-id brightnessctl -q set +10%
+bindsym --locked XF86MonBrightnessDown exec --no-startup-id brightnessctl -q set 10%-
+
 ##############
 # WORKSPACES #
 ##############
