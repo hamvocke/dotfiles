@@ -41,6 +41,11 @@ input type:keyboard {
     xkb_options caps:ctrl_modifier
 }
 
+input type:touchpad {
+    tap enabled
+    natural_scroll enabled
+}
+
 ################
 # KEY BINDINGS #
 ################
