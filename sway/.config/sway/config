@@ -171,9 +171,9 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-###################
-# Colors  & Bling #
-###################
+##################
+# Colors & Bling #
+##################
 
 # Show gaps around windows. Let that wallpaper shine through a bit!
 gaps inner 10
@@ -206,13 +206,12 @@ client.urgent           $base08 $base08 $base00 $base08 $base08
 client.placeholder      $base00 $base00 $base05 $base00 $base00
 client.background       $base07
 
-
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
         position top
         status_command i3status
-        font pango:Fira Code, FontAwesome 12
+        font pango:Fira Code 12
         colors {
             background $base00
             separator  $base01
