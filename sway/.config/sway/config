@@ -129,6 +129,9 @@ bindsym XF86AudioMicMute exec pactl set-source-mute @DEFAULT_SOURCE@ toggle
 bindsym --locked XF86MonBrightnessUp exec --no-startup-id brightnessctl -q set +10%
 bindsym --locked XF86MonBrightnessDown exec --no-startup-id brightnessctl -q set 10%-
 
+# toggle 'lnks' to view browser bookmarks
+bindsym $mod+Shift+b exec $term zsh -ic ~/dev/lnks/lnks.sh
+
 ##############
 # WORKSPACES #
 ##############
