@@ -8,6 +8,7 @@ call plug#begin(stdpath("data") . '/plugged')
   Plug 'vimwiki/vimwiki'
   Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
   Plug 'junegunn/fzf.vim'
+  Plug 'ggandor/leap.nvim'
 call plug#end()
 
 """""""""""""""""""""""""""""""""""""""""""""""""
@@ -145,3 +146,5 @@ let g:vimwiki_list = [{'path': '~/vimwiki/', 'auto_export': 1}]
 " show hidden files
 let NERDTreeShowHidden=1
 
+
+lua require('leap').add_default_mappings()
