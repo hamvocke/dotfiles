@@ -262,3 +262,5 @@ bar {
             binding_mode        $base00 $base0A $base00
         }
 }
+
+exec systemctl --user import-environment
