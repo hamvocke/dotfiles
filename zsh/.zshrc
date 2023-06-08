@@ -5,7 +5,7 @@ ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that soh-my-zsh is loaded.
-ZSH_THEME="simple"
+ZSH_THEME="gozilla"
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
@@ -40,7 +40,7 @@ ZSH_THEME="simple"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git themes)
+plugins=(git themes asdf)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -68,6 +68,7 @@ base16_dracula
 alias serve='python -m http.server'
 alias de='setxkbmap de'
 alias us='setxkbmap us'
+alias lnks='~/dev/lnks/lnks.sh'
 
 # print current week number
 alias week='date +%V'
@@ -121,3 +122,11 @@ if [ -x "$(command -v fzf)" ]; then
     source /usr/share/doc/fzf/examples/completion.zsh
 fi
 
+
+
+#------------------------------------------------------
+# Additional tools (version managers, CLI tools, ...)
+#------------------------------------------------------
+
+export FLYCTL_INSTALL="/home/ham/.fly"
+export PATH="$FLYCTL_INSTALL/bin:$PATH"
