@@ -2,7 +2,9 @@
 
 Config files for `bat`.
 
-This configures `bat` to use a `base16-shell` compatible color scheme instead of bringing its own scheme for syntax highlighting. This way, `bat` output will automatically follow the currently set base16-shell theme.
+This configures `bat` to use a *Catppuccin Mocha* as its color scheme for syntax highlighting.
+
+You can install more color schemes by adding them to the `themes/` directory and running `bat cache --build`. To ensure that your themes are installed propery, check the output of `bat --list-themes` and see if your theme shows up. You can then set it in your `bat`'s configuration file.
 
 Since `bat` is used by a lot of tools under the hood (e.g. `delta` for paging/diffing in `git`, or as previewer in `fzf`, this will make sure that quite a lot of other tools play nicely with our terminal colors.
 
