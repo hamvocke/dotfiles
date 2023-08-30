@@ -3,11 +3,10 @@ dotfiles
 
 A collection of my personal dotfiles. 
 
-Here's a little preview of what it looks like with [base16-shell](https://github.com/chriskempson/base16-shell)'s _Horizon_ theme enabled.
+Here's a little preview of what it looks like with the lovely [catppuccin theme](https://github.com/catppuccin/catppuccin) enabled.
 
 
 ![tmux screenshot](screenshot.png)
-
 
 
 Installation
@@ -36,9 +35,9 @@ Then simply use stow to install the dotfiles you want to use:
     stow vim
     stow tmux
 
-Use base16 colors
+Consistent colors
 -----------------
-To get the most out of my dotfiles I recommend installing [base16-shell](https://github.com/chriskempson/base16-shell) on your system. This will allow you to have unified colors in all your command line applications. If you see that some colors are off when using my setup, installing base16-shell is most likely the way to fix it.
+To get the most out of my dotfiles I recommend using matching colorschemes for various applications. One way would be to use [base16-shell](https://github.com/chriskempson/base16-shell) on your system, define it in your `.zshrc` and let that handle setting your colors globally. Alternatively, you can pick a well-loved colorscheme and set it up in your terminal emulator (e.g. alacritty), vim, and other tools you'd want to use. 
 
 Additional configuration
 ------------------------
