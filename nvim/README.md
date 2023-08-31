@@ -1,25 +1,27 @@
-## Neovim
+# Neovim
 
-My neovim configuration.
+My neovim configuration, based on [kickstart.nvim](https://github.com/nvim-lua/kickstart.nvim). See the kickstart.nvim documentation to get started with the fundamentals. I picked kickstart.nvim after years of messing with my own, basic vim/nvim configuration, as it makes it easy to get started with some otherwise annoying to setup plugins I wanted to include in my vim experience, like LSP support and treesitter. If you need a more simple configuration, you could check out my `vim` configuration in this repo instead.
+
+## Features
+* using `lazy.nvim` for managing and installing plugins
+* `vim-fugitive` for git integration
+* showing git changes in the gutter via `gitsigns.nvim`
+* LSP integration
+* treesitter for better syntax highlighting, code navigation and editing
+* autocompletion via `nvim-cmp`
+* code snippets via `luasnip` and `friendly-snippets`
+* keybinding discovery via `which-key.nvim`
+* fuzzy finder via `telescope.nvim`
+
+## Key Bindings
+* `<space>` is the leader key. Press it to get an overview of key bindings.
 
 ## Installation
 
-0. Install neovim
-1. install [vim-plug](https://github.com/junegunn/vim-plug)
-2. Install [fzf](https://github.com/junegunn/fzf)
-3. (Optional) Install [bat](https://github.com/sharkdp/bat) for syntax highlighting in file-search previews
-4. (Optional) Install [ripgrep](https://github.com/BurntSushi/ripgrep) for code search
-5. run `stow nvim` from this repository's root directory
-6. open `nvim`
-7. run `:PlugInstall`
+* Install neovim (> 0.8)
+* Run `stow nvim` from this repository's root directory
+* (Optional) Install [ripgrep](https://github.com/BurntSushi/ripgrep) for file search
+* Open `nvim` and wait for `lazy.nvim` to install plugins
+* Restart `nvim`
+* You're ready to go
 
-## Features & Key Bindings
-
-* Use arrow-key navigation to move line by line
-* use `j` and `k` navigation to move by "visual line" (don't skip wrapped lines)
-* `Leader` key is `,` (comma)
-* `,-e` searches for recently opened files (using fzf.vim)
-* `,-p` searches for files in the current directory (fzf.vim)
-* `,-c` searches through git commits (fzf.vim)
-* `,-f` searches within files and code using `rg` (ripgrep) (fzf.vim)
-* `,-l` toggles file browser (NERDTree)
