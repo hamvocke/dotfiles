@@ -12,6 +12,7 @@ My neovim configuration, based on [kickstart.nvim](https://github.com/nvim-lua/k
 * code snippets via `luasnip` and `friendly-snippets`
 * keybinding discovery via `which-key.nvim`
 * fuzzy finder via `telescope.nvim`
+* file tree via `neo-tree.nvim`
 
 ## Key Bindings
 * `<space>` is the leader key. Press it to get an overview of key bindings.
