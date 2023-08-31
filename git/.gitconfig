@@ -12,7 +12,7 @@
     s = status
     br = branch
     d = diff
-    dd = diff --cached`
+    dd = diff --cached
     l = git log --oneline --graph
     cp = cherry-pick
     ps = push
