@@ -13,7 +13,7 @@
     br = branch
     d = diff
     dd = diff --cached
-    l = git log --oneline --graph
+    l = log --oneline --graph
     cp = cherry-pick
     ps = push
     pl = pull
