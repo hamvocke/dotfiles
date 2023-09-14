@@ -11,6 +11,6 @@ return {
   },
   config = function ()
     require('neo-tree').setup {}
-    vim.keymap.set('n', '<leader>f', '<cmd>Neotree toggle<CR>', { desc = '[F]ile Tree' })
+    vim.keymap.set('n', '<leader>l', '<cmd>Neotree toggle<CR>', { desc = '[L]ist Files' })
   end,
 }
