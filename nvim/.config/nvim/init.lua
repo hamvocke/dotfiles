@@ -119,10 +119,8 @@ require('lazy').setup({
     'lukas-reineke/indent-blankline.nvim',
     -- Enable `lukas-reineke/indent-blankline.nvim`
     -- See `:help indent_blankline.txt`
-    opts = {
-      char = '┊',
-      show_trailing_blankline_indent = false,
-    },
+    main = "ibl",
+    opts = {}
   },
 
   -- "gc" to comment visual regions/lines
@@ -386,7 +384,7 @@ local on_attach = function(_, bufnr)
   vim.api.nvim_buf_create_user_command(bufnr, 'Format', function(_)
     vim.lsp.buf.format()
   end, { desc = 'Format current buffer with LSP' })
-  nmap('<leader>F', vim.lsp.buf.format(), '[F]ormat Buffer')
+  nmap('<leader>F', vim.lsp.buf.format, '[F]ormat Buffer')
 end
 
 -- Enable the following language servers
