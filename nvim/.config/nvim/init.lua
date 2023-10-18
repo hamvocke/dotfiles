@@ -281,7 +281,7 @@ vim.keymap.set('n', '<leader>sh', require('telescope.builtin').help_tags, { desc
 vim.keymap.set('n', '<leader>sw', require('telescope.builtin').grep_string, { desc = '[S]earch current [W]ord' })
 vim.keymap.set('n', '<leader>f',  require('telescope.builtin').live_grep, { desc = '[F]ind text' })
 vim.keymap.set('n', '<leader>sd', require('telescope.builtin').diagnostics, { desc = '[S]earch [D]iagnostics' })
-vim.keymap.set('n', '<leader>gl', require('telescope.builtin').git_commits, { desc = 'Show [G]it [L]og' })
+vim.keymap.set('n', '<leader>gla', require('telescope.builtin').git_commits, { desc = 'Show [G]it [L]og' })
 vim.keymap.set('n', '<leader>glb', require('telescope.builtin').git_bcommits, { desc = 'Show [G]it [L]og of current [B]uffer' })
 
 -- [[ Configure Treesitter ]]
