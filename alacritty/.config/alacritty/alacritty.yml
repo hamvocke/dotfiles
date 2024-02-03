@@ -23,7 +23,7 @@ import:
   # available, otherwise `xterm-256color` is used.
   #TERM: alacritty
 
-#window:
+window:
   # Window dimensions (changes require restart)
   #
   # Number of lines/columns (not pixels) in the terminal. Both lines and columns
@@ -46,9 +46,9 @@ import:
   #
   # Blank space added around the window in pixels. This padding is scaled
   # by DPI and the specified value is always added at both opposing sides.
-  # padding:
-  #  x: 40
-  #  y: 40
+  padding:
+    x: 10
+    y: 5
 
   # Spread additional padding evenly around the terminal content.
   #dynamic_padding: false
