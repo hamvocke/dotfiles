@@ -1,6 +1,3 @@
--- Unless you are still migrating, remove the deprecated commands from v1.x
-vim.cmd([[ let g:neo_tree_remove_legacy_commands = 1 ]])
-
 return {
   "nvim-neo-tree/neo-tree.nvim",
   version = "*",
@@ -9,8 +6,10 @@ return {
     "nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
     "MunifTanjim/nui.nvim",
   },
+  keys = {
+    { "<leader>l", "<cmd>Neotree toggle<cr>", desc = "[L]ist Files" },
+  },
   config = function ()
     require('neo-tree').setup {}
-    vim.keymap.set('n', '<leader>l', '<cmd>Neotree toggle<CR>', { desc = '[L]ist Files' })
   end,
 }
