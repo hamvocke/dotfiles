@@ -11,6 +11,10 @@ export TERM=xterm-256color
 export VISUAL=nvim
 export EDITOR="$VISUAL"
 
+# I'm a weirdo. I like vim but prefer emacs mode on the terminal.
+# Since zsh automatically enables vi mode when you set 'vi' as your standard $EDITOR, let's explicitly request emacs mode.
+bindkey -e
+
 #------------------------------------------------------
 # Aliases
 #------------------------------------------------------
