@@ -353,7 +353,7 @@ vim.keymap.set('n', '<leader>sr', require('telescope.builtin').resume, { desc = 
 vim.defer_fn(function()
   require('nvim-treesitter.configs').setup {
     -- Add languages to be installed here that you want installed for treesitter
-    ensure_installed = { 'astro', 'bash', 'eex', 'elixir', 'go', 'html', 'heex', 'lua', 'python', 'javascript', 'typescript', 'rust', 'tsx', 'vimdoc', 'vim' },
+    ensure_installed = { 'astro', 'bash', 'eex', 'elixir', 'go', 'html', 'heex', 'lua', 'python', 'svelte', 'javascript', 'typescript', 'rust', 'tsx', 'vimdoc', 'vim' },
 
     -- Autoinstall languages that are not installed. Defaults to false (but you can change for yourself!)
     auto_install = true,
@@ -511,6 +511,7 @@ local servers = {
   astro = {},
   html = { filetypes = { 'html' } },
   elixirls = {},
+  svelte = {},
 }
 
 -- Setup neovim lua configuration
