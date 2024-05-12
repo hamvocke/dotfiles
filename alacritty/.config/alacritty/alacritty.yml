@@ -124,16 +124,16 @@ window:
 # Font configuration
 font:
   normal:
-    family: Fira Code
+    family: FiraCode Nerd Font
 
   bold:
-    family: Fira Code
+    family: FiraCode Nerd Font
 
   italic:
-    family: Fira Code
+    family: FiraCode Nerd Font
 
   bold_italic:
-    family: Fira Code
+    family: FiraCode Nerd Font
 
   size: 12.0
 

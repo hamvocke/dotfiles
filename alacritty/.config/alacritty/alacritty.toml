@@ -1,0 +1,20 @@
+import = ["/home/ham/.config/alacritty/colors/catppuccin-mocha.toml"]
+
+[font]
+size = 12.0
+
+[font.bold]
+family = "FiraCode Nerd Font"
+
+[font.bold_italic]
+family = "FiraCode Nerd Font"
+
+[font.italic]
+family = "FiraCode Nerd Font"
+
+[font.normal]
+family = "FiraCode Nerd Font"
+
+[window.padding]
+x = 10
+y = 5
