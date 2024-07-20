@@ -41,6 +41,13 @@ Consistent colors
 
 To get the most out of my dotfiles I recommend using matching colorschemes for various applications. One way would be to use [base16-shell](https://github.com/chriskempson/base16-shell) on your system, define it in your `.zshrc` and let that handle setting your colors globally. Alternatively, you can pick a well-loved colorscheme and set it up in your terminal emulator (e.g. alacritty), vim, and other tools you'd want to use. 
 
+If you're fancy generating your own snazzy color scheme, go and check out [Root Loops](http://rootloops.sh)
+
+Fonts
+-----
+
+I'm relying on Nerd Fonts in some of my configurations. These are special fonts that come with extra glyphs that allow you to display small icons, UI elements and other fancy stuff on the command line. You don't have to use these, but if you don't some things could look a little less good. You can simply [download your Nerd Font of choice over here](https://www.nerdfonts.com).
+
 Additional configuration
 ------------------------
 
