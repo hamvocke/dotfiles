@@ -1,4 +1,4 @@
-import = ["/home/ham/.config/alacritty/colors/catppuccin-mocha.toml"]
+import = ["/home/ham/.config/alacritty/colors/rootloops.toml"]
 
 [font]
 size = 12.0

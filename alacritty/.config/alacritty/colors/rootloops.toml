@@ -1,0 +1,30 @@
+# Colors (Root Loops)
+# via rootloops.sh
+
+[colors.primary]
+background = '#101526'
+foreground = '#dde2f2'
+
+[colors.cursor]
+text = '#101526'
+cursor = '#8d9cca'
+
+[colors.normal]
+black = '#101526'
+red = '#fb80aa'
+green = '#a1bd22'
+yellow = '#f49437'
+blue = '#56b8f7'
+magenta = '#bd97fc'
+cyan = '#28c8b1'
+white = '#dde2f2'
+
+[colors.bright]
+black = '#4d5c8a'
+red = '#fda7c1'
+green = '#b5d427'
+yellow = '#fcb173'
+blue = '#89cdfc'
+magenta = '#ceb5fd'
+cyan = '#30e1c7'
+white = '#8d9cca'
