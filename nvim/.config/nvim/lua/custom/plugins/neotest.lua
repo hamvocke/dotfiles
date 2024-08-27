@@ -6,6 +6,7 @@ return {
     'antoinemadec/FixCursorHold.nvim',
     'nvim-treesitter/nvim-treesitter',
     'marilari88/neotest-vitest',
+    'olimorris/neotest-rspec',
   },
   config = function()
     require('neotest').setup {
@@ -15,6 +16,7 @@ return {
             return name ~= 'node_modules'
           end,
         },
+        require 'neotest-rspec',
       },
       status = { enabled = true, virtual_text = true, signs = false },
     }
