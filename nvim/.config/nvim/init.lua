@@ -543,7 +543,6 @@ require('lazy').setup({
         astro = {},
         elixirls = {},
         svelte = {},
-        ruby_lsp = {},
         -- lua_ls = {
         --   -- cmd = {...},
         --   -- filetypes = { ...},
