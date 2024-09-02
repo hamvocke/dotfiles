@@ -2,7 +2,7 @@
 # uncomment the following line and run zprof as the first command in a new shell
 # zmodload zsh/zprof
 
-export PATH=$PATH:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:~/.dotnet:~/.local/bin
+export PATH=$PATH:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 
 # use 256 color terminal
 export TERM=xterm-256color
