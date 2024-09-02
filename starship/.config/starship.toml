@@ -4,9 +4,11 @@
 # Inserts a blank line between shell prompts
 add_newline = true
 
-[character]
-success_symbol = '[▶](bold green)'
-
 [package]
 disabled = true
 
+[docker_context]
+disabled = true
+
+[ruby]
+disabled = true
