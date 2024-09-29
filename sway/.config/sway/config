@@ -12,7 +12,7 @@ set $up k
 set $right l
 
 # Set default terminal emulator
-set $term foot
+set $term alacritty
 
 # Set application launcher command
 # Note: pass the final command to swaymsg so that the resulting window can be opened
