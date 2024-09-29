@@ -1,7 +1,7 @@
 import = ["~/.config/alacritty/colors/rootloops.toml"]
 
 [font]
-size = 15.0
+size = 12.0
 
 [font.bold]
 family = "FiraCode Nerd Font"
