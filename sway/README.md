@@ -19,3 +19,6 @@ I'm setting special fonts (e.g. `Fira Code`) in this configuration that you migh
 
 ## Display Brightness
 I've set up brightness keys to control your display's brightness via `brightnessctl`. Make sure to [install it](https://github.com/Hummer12007/brightnessctl/) if you want to use this functionality.
+
+## Screencapture
+To capture a screenshot that only includes a part of your screen, I set up a keybinding that triggers `grim` and `slurp`. Make sure to install these dependencies if you want to use this feature.
