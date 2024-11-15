@@ -209,8 +209,8 @@ bindsym $mod+r mode "resize"
 # Colors & Bling #
 ##################
 
-# set wallpaper to whatever is at ~/wallpaper.png
-output * bg ~/wallpaper.png fill
+# set wallpaper to whatever is at ~/wallpaper.jpg
+output * bg ~/wallpaper.jpg fill
 
 
 # Show gaps around windows. Let that wallpaper shine through a bit!
@@ -251,7 +251,9 @@ client.background       $base00
 # finds out, if available)
 bar {
         position top
-        status_command i3status
+
+        status_command while ~/.config/sway/status.sh; do sleep 5; done
+
         font pango:Fira Code 12
         colors {
             background $base00
