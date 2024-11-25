@@ -1,30 +1,31 @@
 # Colors (Root Loops)
 # via rootloops.sh
+# recipe: https://rootloops.sh/?sugar=8&colors=9&sogginess=4&flavor=0&fruit=9&milk=1
 
 [colors.primary]
-background = '#101526'
-foreground = '#dde2f2'
+background = '#1a2137'
+foreground = '#e7ebf6'
 
 [colors.cursor]
-text = '#101526'
-cursor = '#8d9cca'
+text = '#e7ebf6'
+cursor = '#bcc6e3'
 
 [colors.normal]
-black = '#101526'
+black = '#2e3859'
 red = '#fb80aa'
 green = '#a1bd22'
 yellow = '#f49437'
 blue = '#56b8f7'
 magenta = '#bd97fc'
 cyan = '#28c8b1'
-white = '#dde2f2'
+white = '#bcc6e3'
 
 [colors.bright]
-black = '#4d5c8a'
+black = '#586899'
 red = '#fda7c1'
 green = '#b5d427'
 yellow = '#fcb173'
 blue = '#89cdfc'
 magenta = '#ceb5fd'
 cyan = '#30e1c7'
-white = '#8d9cca'
+white = '#f5f6fb'
