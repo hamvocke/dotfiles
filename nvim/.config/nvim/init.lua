@@ -544,6 +544,7 @@ require('lazy').setup({
         astro = {},
         elixirls = {},
         svelte = {},
+        prettierd = {},
         -- lua_ls = {
         --   -- cmd = {...},
         --   -- filetypes = { ...},
@@ -815,7 +816,28 @@ require('lazy').setup({
     main = 'nvim-treesitter.configs', -- Sets main module to use for opts
     -- [[ Configure Treesitter ]] See `:help nvim-treesitter`
     opts = {
-      ensure_installed = { 'astro', 'bash', 'elixir', 'go', 'html', 'heex', 'javascript', 'lua', 'markdown', 'rust', 'ruby', 'typescript', 'vim', 'vimdoc' },
+      ensure_installed = {
+        'astro',
+        'bash',
+        'css',
+        'dockerfile',
+        'elixir',
+        'gitignore',
+        'go',
+        'html',
+        'heex',
+        'javascript',
+        'json',
+        'lua',
+        'markdown',
+        'rust',
+        'ruby',
+        'svelte',
+        'typescript',
+        'yaml',
+        'vim',
+        'vimdoc',
+      },
       -- Autoinstall languages that are not installed
       auto_install = true,
       highlight = {
