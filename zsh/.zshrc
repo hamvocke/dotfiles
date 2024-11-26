@@ -108,10 +108,6 @@ fi
 # Additional tools (version managers, CLI tools, ...)
 #------------------------------------------------------
 
-export FLYCTL_INSTALL="/home/ham/.fly"
-export PATH="$FLYCTL_INSTALL/bin:$PATH"
-
-
 # Prompt
 eval "$(starship init zsh)"
 
