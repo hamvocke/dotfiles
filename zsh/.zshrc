@@ -33,7 +33,7 @@ SAVEHIST=$HISTSIZE          # and also store all these entries in our $HISTFILE
 alias serve='python -m http.server'
 alias de='setxkbmap de'
 alias us='setxkbmap us'
-alias lnks='~/dev/lnks/lnks.sh'
+alias lnks='~/.bookmarks/lnks.sh'
 
 alias ..='cd ..'
 alias ...='cd ../..'
