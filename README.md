@@ -30,7 +30,7 @@ Install GNU Stow _(if not already installed)_
     Fedora:   yum install stow
     Arch:     pacman -S stow
 
-Then simply use stow to install the dotfiles you want to use:
+Then simply use `stow` to install the dotfiles you want to use:
 
     cd ~/.dotfiles
     stow vim
@@ -41,7 +41,8 @@ Consistent colors
 
 To get the most out of my dotfiles I recommend using matching colorschemes for various applications. One way would be to use [base16-shell](https://github.com/chriskempson/base16-shell) on your system, define it in your `.zshrc` and let that handle setting your colors globally. Alternatively, you can pick a well-loved colorscheme and set it up in your terminal emulator (e.g. alacritty), vim, and other tools you'd want to use. 
 
-If you're fancy generating your own snazzy color scheme, go and check out [Root Loops](http://rootloops.sh)
+> [!TIP]
+> If you fancy generating your own snazzy color scheme, go and check out [Root Loops](http://rootloops.sh).
 
 Fonts
 -----
