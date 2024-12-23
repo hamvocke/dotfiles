@@ -12,6 +12,15 @@ vim.g.have_nerd_font = true
 -- NOTE: You can change these options as you wish!
 --  For more options, you can see `:help option-list`
 
+-- set up MDX syntax highlighting
+vim.filetype.add({
+	extension = {
+		mdx = "markdown.mdx",
+	},
+	filename = {},
+	pattern = {},
+})
+
 -- Make line numbers default
 vim.opt.number = true
 -- You can also add relative line numbers, to help with jumping.
