@@ -2,7 +2,7 @@ set background=dark
 
 hi clear
 
-let g:colors_name = 'transit'
+let g:colors_name = 'ansi'
 set notermguicolors
 
 " This color scheme relies on ANSI colors only. It automatically inherits
@@ -42,11 +42,11 @@ hi Repeat		ctermfg=2 " for, do, while
 hi Label		ctermfg=3 " case, default
 hi Operator		ctermfg=6 " sizeof, +, *
 hi Keyword		ctermfg=5
-hi StorageClass		ctermfg=11 " static, register, volatile
-hi Structure		ctermfg=11 " struct, union, enum
-hi Typedef		ctermfg=11
+hi StorageClass		ctermfg=3 " static, register, volatile
+hi Structure		ctermfg=3 " struct, union, enum
+hi Typedef		ctermfg=3
 hi Special		ctermfg=9
-hi Type			ctermfg=11 " int, long, char
+hi Type			ctermfg=3 " int, long, char
 
 " treesitter
 hi @tag			ctermfg=5
