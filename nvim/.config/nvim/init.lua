@@ -13,13 +13,13 @@ vim.g.have_nerd_font = true
 --  For more options, you can see `:help option-list`
 
 -- set up MDX syntax highlighting
-vim.filetype.add({
+vim.filetype.add {
   extension = {
-    mdx = "markdown.mdx",
+    mdx = 'markdown.mdx',
   },
   filename = {},
   pattern = {},
-})
+}
 
 -- Make line numbers default
 vim.opt.number = true
@@ -267,26 +267,26 @@ require('lazy').setup({
   -- Use the `dependencies` key to specify the dependencies of a particular plugin
 
   {
-    "ibhagwan/fzf-lua",
+    'ibhagwan/fzf-lua',
     -- optional for icon support
-    dependencies = { "nvim-tree/nvim-web-devicons" },
+    dependencies = { 'nvim-tree/nvim-web-devicons' },
     config = function()
-      local fzf = require("fzf-lua")
+      local fzf = require 'fzf-lua'
 
-      fzf.setup({})
-      vim.keymap.set("n", "<leader>sh", fzf.helptags, { desc = "[S]earch [H]elp" })
-      vim.keymap.set("n", "<leader>sk", fzf.keymaps, { desc = "[S]earch [K]eymaps" })
-      vim.keymap.set("n", "<leader>sf", fzf.files, { desc = "[S]earch [F]iles" })
-      vim.keymap.set("n", "<leader>sb", fzf.builtin, { desc = "[S]earch [B]uiltin Commands" })
-      vim.keymap.set("n", "<leader>sw", fzf.grep_cword, { desc = "[S]earch current [W]ord" })
-      vim.keymap.set("n", "<leader>sg", fzf.live_grep, { desc = "[S]earch by [G]rep" })
-      vim.keymap.set("n", "<leader>sd", fzf.diagnostics_workspace, { desc = "[S]earch [D]iagnostics" })
-      vim.keymap.set("n", "<leader>sr", fzf.resume, { desc = "[S]earch [R]esume" })
-      vim.keymap.set("n", "<leader>sn", fzf.commands, { desc = "[S]earch [N]eovim Commands" })
-      vim.keymap.set("n", "<leader>sl", fzf.lsp_finder, { desc = "[S]earch [L]SP locations" })
-      vim.keymap.set("n", "<leader>s.", fzf.oldfiles, { desc = "[S]earch Recent Files" })
-      vim.keymap.set("n", "<leader><leader>", fzf.buffers, { desc = "[ ] Find open buffers" })
-    end
+      fzf.setup {}
+      vim.keymap.set('n', '<leader>sh', fzf.helptags, { desc = '[S]earch [H]elp' })
+      vim.keymap.set('n', '<leader>sk', fzf.keymaps, { desc = '[S]earch [K]eymaps' })
+      vim.keymap.set('n', '<leader>sf', fzf.files, { desc = '[S]earch [F]iles' })
+      vim.keymap.set('n', '<leader>sb', fzf.builtin, { desc = '[S]earch [B]uiltin Commands' })
+      vim.keymap.set('n', '<leader>sw', fzf.grep_cword, { desc = '[S]earch current [W]ord' })
+      vim.keymap.set('n', '<leader>sg', fzf.live_grep, { desc = '[S]earch by [G]rep' })
+      vim.keymap.set('n', '<leader>sd', fzf.diagnostics_workspace, { desc = '[S]earch [D]iagnostics' })
+      vim.keymap.set('n', '<leader>sr', fzf.resume, { desc = '[S]earch [R]esume' })
+      vim.keymap.set('n', '<leader>sn', fzf.commands, { desc = '[S]earch [N]eovim Commands' })
+      vim.keymap.set('n', '<leader>sl', fzf.lsp_finder, { desc = '[S]earch [L]SP locations' })
+      vim.keymap.set('n', '<leader>s.', fzf.oldfiles, { desc = '[S]earch Recent Files' })
+      vim.keymap.set('n', '<leader><leader>', fzf.buffers, { desc = '[ ] Find open buffers' })
+    end,
   },
 
   {
@@ -692,9 +692,6 @@ require('lazy').setup({
       -- Like many other themes, this one has different styles, and you could load
       -- any other, such as 'tokyonight-storm', 'tokyonight-moon', or 'tokyonight-day'.
       vim.cmd.colorscheme 'catppuccin-mocha'
-
-      -- You can configure highlights by doing something like:
-      vim.cmd.hi 'Comment gui=none'
     end,
   },
 
