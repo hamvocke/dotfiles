@@ -1,6 +1,3 @@
-import = ["~/.config/alacritty/colors/rootloops.toml"]
-
-live_config_reload = true
 
 [font]
 size = 12.0
@@ -20,3 +17,8 @@ family = "FiraCode Nerd Font"
 [window.padding]
 x = 10
 y = 5
+
+[general]
+
+live_config_reload = true
+import = ["~/.config/alacritty/colors/rootloops.toml"]
