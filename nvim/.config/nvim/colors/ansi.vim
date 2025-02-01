@@ -21,12 +21,30 @@ set notermguicolors
 " 5: Magenta		│  13: Bright Magenta
 " 6: Cyan		│  14: Bright Cyan
 " 7: White (gray)	│  15: Bright White
+"
+" Use the 'cterm' argument to make certain highlight groups appear in italic
+" (if your terminal and font support it), bold, reverse, underlined, etc.
+" See ':help attr-list' for possible options.
 
+
+" Editor
 hi NonText 		ctermfg=0
 hi WinSeparator 	ctermfg=8
 hi LineNr		ctermfg=8
 hi SignColumn				ctermbg=NONE
+hi CursorLine		ctermfg=NONE 	ctermbg=0
+hi CursorLineNr		ctermfg=6
+hi Visual 		ctermfg=0 	ctermbg=7
+hi Search				ctermbg=11
+hi IncSearch 		ctermfg=0 	ctermbg=1
+hi CurSearch 				ctermbg=3
+hi TabLine		ctermfg=7	ctermbg=0
+hi TabLineFill		ctermfg=14	ctermbg=NONE
+hi TabLineSel		ctermfg=0	ctermbg=11
+hi StatusLine		ctermfg=0	ctermbg=7	cterm=bold
+hi StatusLineNC		ctermfg=15	ctermbg=0	cterm=NONE
 
+" Syntax
 hi Comment 		ctermfg=8
 hi Constant		ctermfg=3
 hi String		ctermfg=2
@@ -48,21 +66,12 @@ hi Typedef		ctermfg=3
 hi Special		ctermfg=9
 hi Type			ctermfg=3 " int, long, char
 
+" Linked highlight groups
+hi link EndOfBuffer NonText
+hi link VertSplit WinSeparator
+
+
 " treesitter
 hi @tag			ctermfg=5
 hi @tag.attribute	ctermfg=14
 hi @tag.delimiter	ctermfg=6
-
-hi CursorLine		ctermfg=NONE 	ctermbg=0
-hi CursorLineNr		ctermfg=6
-hi Visual 		ctermfg=0 	ctermbg=7
-hi Search				ctermbg=11
-hi IncSearch 		ctermfg=0 	ctermbg=1
-hi CurSearch 				ctermbg=3
-hi TabLine		ctermfg=7	ctermbg=0
-hi TabLineFill		ctermfg=14	ctermbg=NONE
-hi TabLineSel		ctermfg=0	ctermbg=11
-hi StatusLine		ctermfg=0	ctermbg=7	cterm=bold
-hi StatusLineNC		ctermfg=15	ctermbg=0	cterm=NONE
-
-hi link VertSplit WinSeparator
