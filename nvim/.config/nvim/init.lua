@@ -4,7 +4,7 @@
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
-vim.cmd.colorscheme 'ansi'
+vim.cmd.colorscheme 'root-loops'
 
 -- Set to true if you have a Nerd Font installed
 vim.g.have_nerd_font = true
