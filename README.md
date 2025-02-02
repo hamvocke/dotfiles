@@ -39,7 +39,11 @@ Then simply use `stow` to install the dotfiles you want to use:
 Consistent colors
 -----------------
 
-To get the most out of my dotfiles I recommend using matching colorschemes for various applications. One way would be to use [base16-shell](https://github.com/chriskempson/base16-shell) on your system, define it in your `.zshrc` and let that handle setting your colors globally. Alternatively, you can pick a well-loved colorscheme and set it up in your terminal emulator (e.g. alacritty), vim, and other tools you'd want to use. 
+My approach to using consistent colors in my terminal experience is to define my preferred color sheme **once** at the terminal emulator level and then tell all applications I use (tmux, vim, bat, ...) to inherit those colors as much as possible. Unfortunately, a lot of modern CLI applications think they're better off inventing their own way of doing things which sometimes forces me to keep multiple color scheme declarations in sync. 
+
+In practice this means that I use [Root Loops](https://rootloops.sh) to find a color scheme I like, set it for my terminal emulator of choice, and use schemes for CLI applications that simply use the 16 ANSI colors that my terminal declares. Only when that's not an option (looking at you, `fzf`) I provide a custom color scheme that matches my terminal color scheme.
+
+I currently use [this Root Loops recipe](https://rootloops.sh/?sugar=8&colors=9&sogginess=4&flavor=0&fruit=9&milk=1).
 
 > [!TIP]
 > If you fancy generating your own snazzy color scheme, go and check out [Root Loops](http://rootloops.sh).
