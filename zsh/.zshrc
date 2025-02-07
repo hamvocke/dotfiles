@@ -15,6 +15,9 @@ export EDITOR="$VISUAL"
 # Since zsh automatically enables vi mode when you set 'vi' as your standard $EDITOR, let's explicitly request emacs mode.
 bindkey -e
 
+# Press <delete> to, well, delete characters instead of producing a ~
+bindkey "^[[3~" delete-char
+
 
 #------------------------------------------------------
 # Better History
