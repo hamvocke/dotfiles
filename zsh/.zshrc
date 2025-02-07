@@ -62,6 +62,13 @@ whatsonport() {
     lsof -i tcp:$1
 }
 
+# Convert a bunch of images to a single PDF
+# Requires imagemagick to be installed
+# Example: img2pdf 2025-01-01-* 2025-01-01-world-domination-plans.pdf
+img2pdf() {
+  magick $1 -auto-orient $2
+}
+
 # load OS specific config
 case `uname` in
   Darwin)
