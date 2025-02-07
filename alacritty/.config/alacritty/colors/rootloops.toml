@@ -7,7 +7,7 @@ background = '#1a2137'
 foreground = '#e7ebf6'
 
 [colors.cursor]
-text = '#e7ebf6'
+text = '#1a2137'
 cursor = '#bcc6e3'
 
 [colors.normal]
