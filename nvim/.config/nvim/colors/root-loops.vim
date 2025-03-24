@@ -32,14 +32,14 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi Macro ctermfg=5 guifg=#bd97fc
     hi StorageClass ctermfg=11 guifg=#fcb173
     hi Structure ctermfg=11 guifg=#fcb173
-    hi Todo ctermbg=9 ctermfg=0 cterm=bold guibg=#fda7c1 guifg=#1a2137 gui=bold
+    hi Todo ctermbg=12 ctermfg=0 cterm=bold guibg=#89cdfc guifg=#1a2137 gui=bold
     hi Type ctermfg=11 guifg=#fcb173
     hi Underlined cterm=underline gui=underline
     hi Bold cterm=bold gui=bold
     hi Italic cterm=italic gui=italic
     hi Ignore ctermbg=NONE ctermfg=NONE cterm=NONE guibg=NONE guifg=NONE gui=NONE
-    hi StatusLine ctermbg=8 ctermfg=15 cterm=NONE guibg=#586899 guifg=#e7ebf6 gui=NONE
-    hi StatusLineNC ctermbg=0 ctermfg=15 cterm=NONE guibg=#2e3859 guifg=#f5f6fb gui=NONE
+    hi StatusLine ctermbg=0 ctermfg=15 cterm=NONE guibg=#2e3859 guifg=#e7ebf6 gui=NONE
+    hi StatusLineNC ctermbg=0 ctermfg=15 cterm=NONE guibg=#1a2137 guifg=#f5f6fb gui=NONE
     hi VertSplit ctermfg=8 guifg=#586899
     hi TabLine ctermbg=0 ctermfg=7 guibg=#2e3859 guifg=#bcc6e3
     hi TabLineFill ctermbg=NONE ctermfg=0 guibg=NONE guifg=#2e3859
@@ -66,7 +66,7 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi CurSearch ctermbg=3 ctermfg=0 guibg=#f49437 guifg=#1a2137
     hi Search ctermbg=11 ctermfg=0 guibg=#fcb173 guifg=#1a2137
     hi Directory ctermfg=4 guifg=#56b8f7
-    hi MatchParen ctermbg=0 ctermfg=3 cterm=underline guibg=#2e3859 guifg=#f49437 gui=underline
+    hi MatchParen ctermbg=0 ctermfg=3 cterm=bold guibg=#2e3859 guifg=#f49437 gui=bold
     hi SpellBad cterm=undercurl gui=undercurl guisp=#fda7c1
     hi SpellCap cterm=undercurl gui=undercurl guisp=#fcb173
     hi SpellLocal cterm=undercurl gui=undercurl guisp=#89cdfc
@@ -102,6 +102,43 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi NormalFloat ctermbg=0 ctermfg=15 guibg=#1a2137 guifg=#e7ebf6
     hi FloatBorder ctermbg=0 ctermfg=7 guibg=#1a2137 guifg=#bcc6e3
     hi FloatShadow ctermbg=0 ctermfg=15 guibg=#2e3859 guifg=#e7ebf6
+    hi @variable ctermfg=15 guifg=#e7ebf6
+    hi @variable.builtin ctermfg=1 guifg=#fb80aa
+    hi @variable.parameter ctermfg=3 guifg=#f49437
+    hi @variable.member ctermfg=1 guifg=#fb80aa
+    hi @constant.builtin ctermfg=5 guifg=#bd97fc
+    hi @string.regexp ctermfg=1 guifg=#fb80aa
+    hi @string.escape ctermfg=6 guifg=#28c8b1
+    hi @string.special.url ctermfg=4 cterm=underline guifg=#56b8f7 gui=underline
+    hi @string.special.symbol ctermfg=13 guifg=#ceb5fd
+    hi @type.builtin ctermfg=3 guifg=#f49437
+    hi @property ctermfg=1 guifg=#fb80aa
+    hi @function.builtin ctermfg=5 guifg=#bd97fc
+    hi @constructor ctermfg=11 guifg=#fcb173
+    hi @keyword.coroutine ctermfg=1 guifg=#fb80aa
+    hi @keyword.function ctermfg=5 guifg=#bd97fc
+    hi @keyword.return ctermfg=6 guifg=#28c8b1
+    hi @keyword.export ctermfg=14 guifg=#30e1c7
+    hi @punctuation.bracket ctermfg=15 guifg=#e7ebf6
+    hi @comment.error ctermbg=9 ctermfg=0 guibg=#fda7c1 guifg=#1a2137
+    hi @comment.warning ctermbg=11 ctermfg=0 guibg=#fcb173 guifg=#1a2137
+    hi @comment.todo ctermbg=12 ctermfg=0 guibg=#89cdfc guifg=#1a2137
+    hi @comment.note ctermbg=14 ctermfg=0 guibg=#30e1c7 guifg=#1a2137
+    hi @markup ctermfg=15 guifg=#e7ebf6
+    hi @markup.strong ctermfg=5 cterm=bold guifg=#bd97fc gui=bold
+    hi @markup.italic ctermfg=5 cterm=italic guifg=#bd97fc gui=italic
+    hi @markup.strikethrough ctermfg=15 cterm=strikethrough guifg=#e7ebf6 gui=strikethrough
+    hi @markup.heading ctermfg=4 cterm=bold guifg=#56b8f7 gui=bold
+    hi @markup.quote ctermfg=6 guifg=#28c8b1
+    hi @markup.math ctermfg=4 guifg=#56b8f7
+    hi @markup.link.url ctermfg=5 cterm=underline guifg=#bd97fc gui=underline
+    hi @markup.raw ctermfg=14 guifg=#30e1c7
+    hi @markup.list.checked ctermfg=2 guifg=#a1bd22
+    hi @markup.list.unchecked ctermfg=7 guifg=#bcc6e3
+    hi @tag ctermfg=5 guifg=#bd97fc
+    hi @tag.builtin ctermfg=6 guifg=#28c8b1
+    hi @tag.attribute ctermfg=4 guifg=#56b8f7
+    hi @tag.delimiter ctermfg=15 guifg=#e7ebf6
 
 elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     set t_Co=16
@@ -126,13 +163,13 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     hi Macro ctermfg=5
     hi StorageClass ctermfg=11
     hi Structure ctermfg=11
-    hi Todo ctermbg=9 ctermfg=0 cterm=bold
+    hi Todo ctermbg=12 ctermfg=0 cterm=bold
     hi Type ctermfg=11
     hi Underlined cterm=underline
     hi Bold cterm=bold
     hi Italic cterm=italic
     hi Ignore ctermbg=NONE ctermfg=NONE cterm=NONE
-    hi StatusLine ctermbg=8 ctermfg=15 cterm=NONE
+    hi StatusLine ctermbg=0 ctermfg=15 cterm=NONE
     hi StatusLineNC ctermbg=0 ctermfg=15 cterm=NONE
     hi VertSplit ctermfg=8
     hi TabLine ctermbg=0 ctermfg=7
@@ -160,7 +197,7 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     hi CurSearch ctermbg=3 ctermfg=0
     hi Search ctermbg=11 ctermfg=0
     hi Directory ctermfg=4
-    hi MatchParen ctermbg=0 ctermfg=3 cterm=underline
+    hi MatchParen ctermbg=0 ctermfg=3 cterm=bold
     hi SpellBad cterm=undercurl
     hi SpellCap cterm=undercurl
     hi SpellLocal cterm=undercurl
@@ -196,6 +233,43 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     hi NormalFloat ctermbg=0 ctermfg=15
     hi FloatBorder ctermbg=0 ctermfg=7
     hi FloatShadow ctermbg=0 ctermfg=15
+    hi @variable ctermfg=15
+    hi @variable.builtin ctermfg=1
+    hi @variable.parameter ctermfg=3
+    hi @variable.member ctermfg=1
+    hi @constant.builtin ctermfg=5
+    hi @string.regexp ctermfg=1
+    hi @string.escape ctermfg=6
+    hi @string.special.url ctermfg=4 cterm=underline
+    hi @string.special.symbol ctermfg=13
+    hi @type.builtin ctermfg=3
+    hi @property ctermfg=1
+    hi @function.builtin ctermfg=5
+    hi @constructor ctermfg=11
+    hi @keyword.coroutine ctermfg=1
+    hi @keyword.function ctermfg=5
+    hi @keyword.return ctermfg=6
+    hi @keyword.export ctermfg=14
+    hi @punctuation.bracket ctermfg=15
+    hi @comment.error ctermbg=9 ctermfg=0
+    hi @comment.warning ctermbg=11 ctermfg=0
+    hi @comment.todo ctermbg=12 ctermfg=0
+    hi @comment.note ctermbg=14 ctermfg=0
+    hi @markup ctermfg=15
+    hi @markup.strong ctermfg=5 cterm=bold
+    hi @markup.italic ctermfg=5 cterm=italic
+    hi @markup.strikethrough ctermfg=15 cterm=strikethrough
+    hi @markup.heading ctermfg=4 cterm=bold
+    hi @markup.quote ctermfg=6
+    hi @markup.math ctermfg=4
+    hi @markup.link.url ctermfg=5 cterm=underline
+    hi @markup.raw ctermfg=14
+    hi @markup.list.checked ctermfg=2
+    hi @markup.list.unchecked ctermfg=7
+    hi @tag ctermfg=5
+    hi @tag.builtin ctermfg=6
+    hi @tag.attribute ctermfg=4
+    hi @tag.delimiter ctermfg=15
 endif
 
 hi link EndOfBuffer NonText
@@ -215,6 +289,51 @@ hi link WinBarNC StatusLineNC
 hi link lCursor Cursor
 hi link CursorIM Cursor
 hi link Terminal Normal
+hi link @variable.parameter.builtin @variable.parameter
+hi link @constant Constant
+hi link @constant.macro Macro
+hi link @module Structure
+hi link @module.builtin Special
+hi link @label Label
+hi link @string String
+hi link @string.special Special
+hi link @character Character
+hi link @character.special SpecialChar
+hi link @boolean Boolean
+hi link @number Number
+hi link @number.float Float
+hi link @type Type
+hi link @type.definition Type
+hi link @attribute Constant
+hi link @attribute.builtin Constant
+hi link @function Function
+hi link @function.call Function
+hi link @function.method Function
+hi link @function.method.call Function
+hi link @operator Operator
+hi link @keyword Keyword
+hi link @keyword.operator Operator
+hi link @keyword.import Include
+hi link @keyword.type Keyword
+hi link @keyword.modifier Keyword
+hi link @keyword.repeat Repeat
+hi link @keyword.debug Exception
+hi link @keyword.exception Exception
+hi link @keyword.conditional Conditional
+hi link @keyword.conditional.ternary Operator
+hi link @keyword.directive PreProc
+hi link @keyword.directive.define Define
+hi link @punctuation.delimiter Delimiter
+hi link @punctuation.special Special
+hi link @comment Comment
+hi link @comment.documentation Comment
+hi link @markup.underline underline
+hi link @markup.link Tag
+hi link @markup.link.label Label
+hi link @markup.list Special
+hi link @diff.plus diffAdded
+hi link @diff.minus diffRemoved
+hi link @diff.delta diffChanged
 
 if (has('termguicolors') && &termguicolors) || has('gui_running')
     let g:terminal_ansi_colors = [ '#2e3859', '#fb80aa', '#a1bd22', '#f49437', '#56b8f7', '#bd97fc', '#28c8b1', '#bcc6e3', '#586899', '#fda7c1', '#b5d427', '#fcb173', '#89cdfc', '#ceb5fd', '#30e1c7', '#f5f6fb' ]
