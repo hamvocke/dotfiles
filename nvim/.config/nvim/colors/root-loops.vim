@@ -104,7 +104,7 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi FloatShadow ctermbg=0 ctermfg=15 guibg=#2e3859 guifg=#e7ebf6
     hi @variable ctermfg=15 guifg=#e7ebf6
     hi @variable.builtin ctermfg=1 guifg=#fb80aa
-    hi @variable.parameter ctermfg=3 guifg=#f49437
+    hi @variable.parameter ctermfg=1 guifg=#fb80aa
     hi @variable.member ctermfg=1 guifg=#fb80aa
     hi @constant.builtin ctermfg=5 guifg=#bd97fc
     hi @string.regexp ctermfg=1 guifg=#fb80aa
@@ -117,7 +117,7 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi @constructor ctermfg=11 guifg=#fcb173
     hi @keyword.coroutine ctermfg=1 guifg=#fb80aa
     hi @keyword.function ctermfg=5 guifg=#bd97fc
-    hi @keyword.return ctermfg=6 guifg=#28c8b1
+    hi @keyword.return ctermfg=5 guifg=#bd97fc
     hi @keyword.export ctermfg=14 guifg=#30e1c7
     hi @punctuation.bracket ctermfg=15 guifg=#e7ebf6
     hi @comment.error ctermbg=9 ctermfg=0 guibg=#fda7c1 guifg=#1a2137
@@ -125,8 +125,8 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi @comment.todo ctermbg=12 ctermfg=0 guibg=#89cdfc guifg=#1a2137
     hi @comment.note ctermbg=14 ctermfg=0 guibg=#30e1c7 guifg=#1a2137
     hi @markup ctermfg=15 guifg=#e7ebf6
-    hi @markup.strong ctermfg=5 cterm=bold guifg=#bd97fc gui=bold
-    hi @markup.italic ctermfg=5 cterm=italic guifg=#bd97fc gui=italic
+    hi @markup.strong ctermfg=15 cterm=bold guifg=#e7ebf6 gui=bold
+    hi @markup.italic ctermfg=15 cterm=italic guifg=#e7ebf6 gui=italic
     hi @markup.strikethrough ctermfg=15 cterm=strikethrough guifg=#e7ebf6 gui=strikethrough
     hi @markup.heading ctermfg=4 cterm=bold guifg=#56b8f7 gui=bold
     hi @markup.quote ctermfg=6 guifg=#28c8b1
@@ -235,7 +235,7 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     hi FloatShadow ctermbg=0 ctermfg=15
     hi @variable ctermfg=15
     hi @variable.builtin ctermfg=1
-    hi @variable.parameter ctermfg=3
+    hi @variable.parameter ctermfg=1
     hi @variable.member ctermfg=1
     hi @constant.builtin ctermfg=5
     hi @string.regexp ctermfg=1
@@ -248,7 +248,7 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     hi @constructor ctermfg=11
     hi @keyword.coroutine ctermfg=1
     hi @keyword.function ctermfg=5
-    hi @keyword.return ctermfg=6
+    hi @keyword.return ctermfg=5
     hi @keyword.export ctermfg=14
     hi @punctuation.bracket ctermfg=15
     hi @comment.error ctermbg=9 ctermfg=0
@@ -256,8 +256,8 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     hi @comment.todo ctermbg=12 ctermfg=0
     hi @comment.note ctermbg=14 ctermfg=0
     hi @markup ctermfg=15
-    hi @markup.strong ctermfg=5 cterm=bold
-    hi @markup.italic ctermfg=5 cterm=italic
+    hi @markup.strong ctermfg=15 cterm=bold
+    hi @markup.italic ctermfg=15 cterm=italic
     hi @markup.strikethrough ctermfg=15 cterm=strikethrough
     hi @markup.heading ctermfg=4 cterm=bold
     hi @markup.quote ctermfg=6
