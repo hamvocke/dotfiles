@@ -1,5 +1,5 @@
 " root-loops.vim -- Root Loops Vim Color Scheme.
-" Webpage:          https://rootloops.sh
+" Webpage:          https://rootloops.sh?sugar=8&colors=9&sogginess=4&flavor=0&fruit=9&milk=1
 " Description:      A neovim color scheme for cereal lovers
 
 hi clear
@@ -12,13 +12,14 @@ let colors_name = "root loops"
 
 if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi Normal ctermbg=NONE ctermfg=NONE guibg=NONE guifg=NONE
-    hi NonText ctermfg=0 guifg=#2e3859
+    hi NonText ctermfg=0 guifg=#1a2137
     hi Comment ctermfg=8 cterm=italic guifg=#586899 gui=italic
     hi Constant ctermfg=3 guifg=#f49437
     hi Error ctermfg=1 guifg=#fb80aa
     hi Identifier ctermfg=9 guifg=#fda7c1
     hi Function ctermfg=4 guifg=#56b8f7
     hi Special ctermfg=13 guifg=#ceb5fd
+    hi Delimiter ctermfg=15 guifg=#e7ebf6
     hi Statement ctermfg=5 guifg=#bd97fc
     hi String ctermfg=2 guifg=#a1bd22
     hi Operator ctermfg=6 guifg=#28c8b1
@@ -115,10 +116,9 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi @property ctermfg=1 guifg=#fb80aa
     hi @function.builtin ctermfg=5 guifg=#bd97fc
     hi @constructor ctermfg=11 guifg=#fcb173
-    hi @keyword.coroutine ctermfg=1 guifg=#fb80aa
     hi @keyword.function ctermfg=5 guifg=#bd97fc
     hi @keyword.return ctermfg=5 guifg=#bd97fc
-    hi @keyword.export ctermfg=14 guifg=#30e1c7
+    hi @keyword.export ctermfg=12 guifg=#89cdfc
     hi @punctuation.bracket ctermfg=15 guifg=#e7ebf6
     hi @comment.error ctermbg=9 ctermfg=0 guibg=#fda7c1 guifg=#1a2137
     hi @comment.warning ctermbg=11 ctermfg=0 guibg=#fcb173 guifg=#1a2137
@@ -150,6 +150,7 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     hi Identifier ctermfg=9
     hi Function ctermfg=4
     hi Special ctermfg=13
+    hi Delimiter ctermfg=15
     hi Statement ctermfg=5
     hi String ctermfg=2
     hi Operator ctermfg=6
@@ -246,10 +247,9 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     hi @property ctermfg=1
     hi @function.builtin ctermfg=5
     hi @constructor ctermfg=11
-    hi @keyword.coroutine ctermfg=1
     hi @keyword.function ctermfg=5
     hi @keyword.return ctermfg=5
-    hi @keyword.export ctermfg=14
+    hi @keyword.export ctermfg=12
     hi @punctuation.bracket ctermfg=15
     hi @comment.error ctermbg=9 ctermfg=0
     hi @comment.warning ctermbg=11 ctermfg=0
@@ -312,6 +312,7 @@ hi link @function.method Function
 hi link @function.method.call Function
 hi link @operator Operator
 hi link @keyword Keyword
+hi link @keyword.coroutine Keyword
 hi link @keyword.operator Operator
 hi link @keyword.import Include
 hi link @keyword.type Keyword
