@@ -504,10 +504,16 @@ require('lazy').setup({
         --    https://github.com/pmizio/typescript-tools.nvim
         --
         -- But for many setups, the LSP (`tsserver`) will work just fine
-        ts_ls = {},
+        ts_ls = {
+          root_dir = require('lspconfig.util').root_pattern '.git',
+        },
         eslint_d = {},
         astro = {},
-        elixirls = {},
+        expert = {
+          cmd = { 'expert' },
+          root_markers = { 'mix.exs', '.git' },
+          filetypes = { 'elixir', 'eelixir', 'heex' },
+        },
         svelte = {},
         prettierd = {},
         -- lua_ls = {
@@ -601,7 +607,7 @@ require('lazy').setup({
   },
 
   { -- Autocompletion
-   'saghen/blink.cmp',
+    'saghen/blink.cmp',
     event = 'VimEnter',
     version = '1.*',
     dependencies = {
@@ -658,7 +664,7 @@ require('lazy').setup({
         -- <c-k>: Toggle signature help
         --
         -- See :h blink-cmp-config-keymap for defining your own keymap
-        preset = 'default',
+        preset = 'enter',
 
         -- For more advanced Luasnip keymaps (e.g. selecting choice nodes, expansion) see:
         --    https://github.com/L3MON4D3/LuaSnip?tab=readme-ov-file#keymaps
@@ -673,7 +679,7 @@ require('lazy').setup({
       completion = {
         -- By default, you may press `<c-space>` to show the documentation.
         -- Optionally, set `auto_show = true` to show the documentation after a delay.
-        documentation = { auto_show = false, auto_show_delay_ms = 500 },
+        documentation = { auto_show = true, auto_show_delay_ms = 500 },
       },
 
       sources = {
@@ -751,7 +757,6 @@ require('lazy').setup({
         'dockerfile',
         'elixir',
         'gitignore',
-        'go',
         'html',
         'heex',
         'javascript',
@@ -759,7 +764,6 @@ require('lazy').setup({
         'lua',
         'markdown',
         'rust',
-        'ruby',
         'svelte',
         'typescript',
         'yaml',
@@ -817,26 +821,26 @@ require('lazy').setup({
   --    For additional information, see `:help lazy.nvim-lazy.nvim-structuring-your-plugins`
   { import = 'custom.plugins' },
 }, {
-    ui = {
-      -- If you are using a Nerd Font: set icons to an empty table which will use the
-      -- default lazy.nvim defined Nerd Font icons, otherwise define a unicode icons table
-      icons = vim.g.have_nerd_font and {} or {
-        cmd = '⌘',
-        config = '🛠',
-        event = '📅',
-        ft = '📂',
-        init = '⚙',
-        keys = '🗝',
-        plugin = '🔌',
-        runtime = '💻',
-        require = '🌙',
-        source = '📄',
-        start = '🚀',
-        task = '📌',
-        lazy = '💤 ',
-      },
+  ui = {
+    -- If you are using a Nerd Font: set icons to an empty table which will use the
+    -- default lazy.nvim defined Nerd Font icons, otherwise define a unicode icons table
+    icons = vim.g.have_nerd_font and {} or {
+      cmd = '⌘',
+      config = '🛠',
+      event = '📅',
+      ft = '📂',
+      init = '⚙',
+      keys = '🗝',
+      plugin = '🔌',
+      runtime = '💻',
+      require = '🌙',
+      source = '📄',
+      start = '🚀',
+      task = '📌',
+      lazy = '💤 ',
     },
-  })
+  },
+})
 
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
