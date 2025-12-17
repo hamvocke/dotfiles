@@ -126,6 +126,6 @@ eval "$(starship init zsh)"
 eval "$(direnv hook zsh)"
 
 # Mise
-if [ -f '~/.local/bin/mise' ]; then
+if [ -f ~/.local/bin/mise ]; then
   eval "$(~/.local/bin/mise activate zsh)"
 fi
