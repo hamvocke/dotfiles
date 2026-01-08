@@ -120,12 +120,16 @@ fi
 #------------------------------------------------------
 
 # Prompt
-eval "$(starship init zsh)"
+if [ -x "$(command -v starship)" ]; then
+  eval "$(starship init zsh)"
+fi
 
 # direnv
-eval "$(direnv hook zsh)"
+if [ -x "$(command -v direnv)" ]; then
+  eval "$(direnv hook zsh)"
+fi
 
 # Mise
-if [ -f ~/.local/bin/mise ]; then
-  eval "$(~/.local/bin/mise activate zsh)"
+if [ -x "$(command -v mise)" ]; then
+  eval "$(mise activate zsh)"
 fi
