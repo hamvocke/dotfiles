@@ -1,0 +1,42 @@
+# Colors (Root Loops)
+# via https://rootloops.sh?sugar=8&colors=9&sogginess=4&flavor=0&fruit=9&milk=1
+
+background = 192036
+foreground = cdd5eb
+
+# black
+palette = 0=#2b3554
+palette = 8=#4b5987
+
+# red
+palette = 1=#fb80aa
+palette = 9=#fda7c1
+
+# green
+palette = 2=#a1bd22
+palette = 10=#b5d427
+
+# yellow
+palette = 3=#f49437
+palette = 11=#fcb173
+
+# blue
+palette = 4=#56b8f7
+palette = 12=#89cdfc
+
+# purple
+palette = 5=#bd97fc
+palette = 13=#ceb5fd
+
+# aqua
+palette = 6=#28c8b1
+palette = 14=#30e1c7
+
+# white
+palette = 7=#909fcc
+palette = 15=#c0cae5
+
+
+window-padding-x = 10
+window-padding-y = 10
+macos-titlebar-proxy-icon = hidden
