@@ -8,10 +8,8 @@ My neovim configuration, based on [kickstart.nvim](https://github.com/nvim-lua/k
 * showing git changes in the gutter via `gitsigns.nvim`
 * LSP integration
 * treesitter for better syntax highlighting, code navigation and editing
-* autocompletion via `nvim-cmp`
-* code snippets via `luasnip` and `friendly-snippets`
 * keybinding discovery via `which-key.nvim`
-* fuzzy finder via `telescope.nvim`
+* fuzzy finder via `fzf-lua.nvim`
 * file tree via `neo-tree.nvim`
 * ... and many more
 
@@ -19,11 +17,19 @@ My neovim configuration, based on [kickstart.nvim](https://github.com/nvim-lua/k
 
 * `<space>` is the leader key. Press it to get an overview of key bindings.
 
+## Requirements
+
+For this configuration to work properly, ensure that the following dependencies are installed:
+
+* neovim >= 0.11
+* [ripgrep](https://github.com/BurntSushi/ripgrep)
+* [fd](https://github.com/sharkdp/fd)
+* [fzf](https://github.com/junegunn/fzf)
+* [tree-sitter-cli](https://github.com/tree-sitter/tree-sitter/blob/master/crates/cli/README.md)
+
 ## Installation
 
-* Install neovim (> 0.8)
 * Run `stow nvim` from this repository's root directory
-* (Optional) Install [ripgrep](https://github.com/BurntSushi/ripgrep) for file search
 * Open `nvim` and wait for `lazy.nvim` to install plugins
 * Restart `nvim`
 * You're ready to go
