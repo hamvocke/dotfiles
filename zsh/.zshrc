@@ -5,7 +5,7 @@
 export PATH=$PATH:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 
 # use 256 color terminal
-export TERM=xterm-256color
+export TERM=tmux-256color
 
 # use vim as standard editor
 export VISUAL=nvim
