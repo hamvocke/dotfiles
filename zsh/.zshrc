@@ -45,6 +45,11 @@ alias ....='cd ../../../'
 alias ls="ls --color=auto"
 alias ll="ls -asl"
 
+# if podman is installed, alias 'docker' to 'podman'
+if [ -x "$(command -v podman)" ]; then
+  alias docker="podman"
+fi
+
 # print current week number
 alias week='date +%V'
 
