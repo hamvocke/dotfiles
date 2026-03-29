@@ -139,6 +139,7 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi @tag.builtin ctermfg=6 guifg=#28c8b1
     hi @tag.attribute ctermfg=4 guifg=#56b8f7
     hi @tag.delimiter ctermfg=15 guifg=#e7ebf6
+    hi LspInlayHint ctermfg=8 guifg=#586899
 
 elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     set t_Co=16
