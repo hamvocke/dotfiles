@@ -41,9 +41,16 @@ for server, config in pairs(lsp_servers) do
 
     -- only create the keymaps if the server attaches successfully
     on_attach = function(_, bufnr)
-      vim.keymap.set('n', 'grd', vim.lsp.buf.definition, { buffer = bufnr, desc = 'vim.lsp.buf.definition()' })
+      vim.keymap.set('n', 'grd', require('fzf-lua').lsp_definitions, { buffer = bufnr, desc = 'Go to definition' })
+      vim.keymap.set('n', 'gri', require('fzf-lua').lsp_implementations, { buffer = bufnr, desc = 'Go to implementation' })
+      vim.keymap.set('n', 'grt', require('fzf-lua').lsp_typedefs, { buffer = bufnr, desc = 'Go to type definition' })
+      vim.keymap.set('n', 'gra', vim.lsp.buf.code_action, { buffer = bufnr, desc = 'Code action' })
+      vim.keymap.set('n', 'grn', vim.lsp.buf.rename, { buffer = bufnr, desc = 'Rename' })
+      vim.keymap.set('n', 'grr', require('fzf-lua').lsp_references, { buffer = bufnr, desc = 'References' })
+      vim.keymap.set('n', 'gO', require('fzf-lua').lsp_document_symbols, { buffer = bufnr, desc = 'Open Document Symbols' })
+      vim.keymap.set('n', 'gW', require('fzf-lua').lsp_workspace_symbols, { buffer = bufnr, desc = 'Open Workspace Symbols' })
 
-      vim.keymap.set('n', 'grf', vim.lsp.buf.format, { buffer = bufnr, desc = 'vim.lsp.buf.format()' })
+      vim.keymap.set('n', 'grf', vim.lsp.buf.format, { buffer = bufnr, desc = 'Format' })
     end,
   })
 end
