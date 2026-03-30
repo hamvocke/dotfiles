@@ -40,3 +40,5 @@ palette = 15=#c0cae5
 window-padding-x = 10
 window-padding-y = 10
 macos-titlebar-proxy-icon = hidden
+
+font-size = 15
