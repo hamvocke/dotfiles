@@ -1,27 +1,59 @@
 # Neovim
 
-My neovim configuration, based on [kickstart.nvim](https://github.com/nvim-lua/kickstart.nvim). See the kickstart.nvim documentation to get started with the fundamentals. I picked kickstart.nvim after years of messing with my own, basic vim/nvim configuration, as it makes it easy to get started with some otherwise annoying to setup plugins I wanted to include in my vim experience, like LSP support and treesitter. If you need a more simple configuration, you could check out my `vim` configuration in this repo instead.
+My neovim configuration, using neovim 0.12 capabilities.
+
+Started using [minimal.nvim](https://github.com/Hashino/minimal.nvim).
 
 ## Features
 
-* using `lazy.nvim` for managing and installing plugins
-* showing git changes in the gutter via `gitsigns.nvim`
+* using neovim's native `vim.pack` plugin manager for managing and installing plugins
 * LSP integration
 * treesitter for better syntax highlighting, code navigation and editing
+* showing git changes in the gutter via `gitsigns.nvim`
 * keybinding discovery via `which-key.nvim`
-* fuzzy finder via `fzf-lua.nvim`
-* file tree via `neo-tree.nvim`
-* ... and many more
+* fuzzy finder and picker via `fzf-lua.nvim`
+* statusbar via `lualine.nvim`
+* autoformatting via `conform.nvim`
+* completions and snippets via `blink.cmp`
 
 ## Key Bindings
 
-* `<space>` is the leader key. Press it to get an overview of key bindings.
+`<space>` is the leader key. Press it to get an overview of key bindings
+provided by `which-key`.
+
+I'm trying to stick to native nvim bindings as much as possible.
+
+Some examples:
+
+* `gr` will trigger LSP-based actions
+  * `grf`: Format current buffer
+  * `grt`: Go to Reference
+  * `grd`: Go to Definition
+  * `gra`: Code Actions
+  * `grn`: Rename
+* `<leader>s` will trigger general search functionality via a picker
+  * `<leader>sf`: Search files
+  * `<leader>sg`: Search by grep
+  * `<leader>sr`: Resume previous search
+  * `<leader><leader>`: Find open buffers
+  * `<leader>sk`: Search keymaps (allows you to discover other key bindings)
+* `<leader>h` allows you to interact with git **h**unks
+  * `<leader>hp`: preview current git hunk
+  * `<leader>hr`: reset current git hunk
+  * `<leader>hs`: stage current git hunk
+  * `<leader>hu`: undo staging current git hunk
+* `K` will show hover documentation for the symbol under the cursor
+* `<C>-s` will open parameter help
+* `<C>-<space>` will open autocomplete
+  * use `<Enter>` to accept a suggestion
+  * use arrow keys to go through suggestions
+  * use `<Escape>` to dismiss suggestions
 
 ## Requirements
 
 For this configuration to work properly, ensure that the following dependencies are installed:
 
-* neovim >= 0.11
+* neovim >= 0.12
 * [ripgrep](https://github.com/BurntSushi/ripgrep)
 * [fd](https://github.com/sharkdp/fd)
 * [fzf](https://github.com/junegunn/fzf)
