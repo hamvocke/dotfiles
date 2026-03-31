@@ -19,4 +19,3 @@ vim.keymap.set('n', '<leader>sn', fzf.commands, { desc = '[S]earch [N]eovim Comm
 vim.keymap.set('n', '<leader>sl', fzf.lsp_finder, { desc = '[S]earch [L]SP locations' })
 vim.keymap.set('n', '<leader>s.', fzf.oldfiles, { desc = '[S]earch Recent Files' })
 vim.keymap.set('n', '<leader><leader>', fzf.buffers, { desc = '[ ] Find open buffers' })
-

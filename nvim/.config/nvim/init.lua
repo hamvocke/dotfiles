@@ -1,12 +1,12 @@
-require 'user.options'
-require 'user.treesitter'
-require 'user.completion'
-require 'user.lsp'
-require 'user.picker'
-require 'user.whichkey'
-require 'user.todo'
-require 'user.gitsigns'
-require 'user.statusline'
+require 'plugins.options'
+require 'plugins.treesitter'
+require 'plugins.completion'
+require 'plugins.lsp'
+require 'plugins.picker'
+require 'plugins.whichkey'
+require 'plugins.todo'
+require 'plugins.gitsigns'
+require 'plugins.statusline'
 
 -- auto-update plugins on startup
 -- vim.pack.update()

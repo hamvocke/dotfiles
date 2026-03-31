@@ -6,7 +6,7 @@ require('nvim-treesitter.install').update 'all'
 
 require('nvim-treesitter.config').setup {
   sync_install = true,
-  install_dir = vim.fn.stdpath('data') .. '/site',
+  install_dir = vim.fn.stdpath 'data' .. '/site',
 
   modules = {},
   ignore_install = {},

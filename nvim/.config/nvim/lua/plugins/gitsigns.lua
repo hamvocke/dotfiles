@@ -51,6 +51,5 @@ require('gitsigns').setup {
     -- Toggles
     map('n', '<leader>htb', gitsigns.toggle_current_line_blame, { desc = '[T]oggle git show [b]lame line' })
     map('n', '<leader>htD', gitsigns.toggle_deleted, { desc = '[T]oggle git show [D]eleted' })
-  end
+  end,
 }
-

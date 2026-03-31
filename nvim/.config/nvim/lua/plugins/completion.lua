@@ -5,12 +5,12 @@ require('blink.cmp').setup {
   completion = {
 
     documentation = {
-      auto_show = false
+      auto_show = false,
     },
   },
 
   keymap = {
-    preset = 'enter'
+    preset = 'enter',
   },
 
   fuzzy = {
@@ -19,4 +19,4 @@ require('blink.cmp').setup {
 }
 
 -- snippets
-vim.pack.add({ "https://github.com/rafamadriz/friendly-snippets" }, { confirm = false })
+vim.pack.add({ 'https://github.com/rafamadriz/friendly-snippets' }, { confirm = false })
