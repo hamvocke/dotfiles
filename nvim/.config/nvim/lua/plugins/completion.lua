@@ -3,16 +3,16 @@ vim.pack.add({ 'https://github.com/saghen/blink.cmp' }, { confirm = false })
 
 require('blink.cmp').setup {
   completion = {
-
     documentation = {
-      auto_show = false,
+      auto_show = true,
     },
   },
-
   keymap = {
     preset = 'enter',
   },
-
+  sources = {
+    default = { 'lsp', 'path', 'snippets', 'buffer' },
+  },
   fuzzy = {
     implementation = 'lua',
   },
