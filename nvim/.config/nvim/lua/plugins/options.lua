@@ -72,6 +72,9 @@ vim.opt.scrolloff = 10
 -- enable line wrapping
 vim.opt.wrap = true
 
+-- automatically read files that have been changed on disk
+vim.opt.autoread = true
+
 -- formatting
 vim.opt.tabstop = 2
 vim.opt.shiftwidth = 2
