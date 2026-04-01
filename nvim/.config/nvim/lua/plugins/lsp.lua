@@ -5,6 +5,8 @@
 local lsp_servers = {
   astro = {},
   expert = {},
+  emmet_ls = {},
+  eslint = {},
   lua_ls = {
     -- https://luals.github.io/wiki/settings/ | `:h nvim_get_runtime_file`
     Lua = { workspace = { library = vim.api.nvim_get_runtime_file('lua', true) } },
@@ -54,3 +56,4 @@ for server, config in pairs(lsp_servers) do
     end,
   })
 end
+
