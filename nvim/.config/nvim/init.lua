@@ -8,6 +8,7 @@ require 'plugins.whichkey'
 require 'plugins.todo'
 require 'plugins.gitsigns'
 require 'plugins.statusline'
+require 'plugins.tree'
 
 -- auto-update plugins on startup
 -- vim.pack.update()
