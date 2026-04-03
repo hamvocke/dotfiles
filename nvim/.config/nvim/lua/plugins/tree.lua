@@ -15,4 +15,4 @@ local config = {
 }
 require('nvim-tree').setup(config)
 
-vim.keymap.set('n', '<leader>f', ':NvimTreeToggle<CR>', { desc = 'Toggle [F]ile Tree' })
+vim.keymap.set('n', '<leader>f', ':NvimTreeFindFileToggle<CR>', { desc = 'Toggle [F]ile Tree' })
