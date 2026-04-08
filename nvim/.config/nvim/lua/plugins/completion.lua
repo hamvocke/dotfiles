@@ -6,6 +6,9 @@ require('blink.cmp').setup {
     documentation = {
       auto_show = true,
     },
+    list = {
+      selection = { auto_insert = false, preselect = false },
+    },
   },
   keymap = {
     preset = 'enter',
