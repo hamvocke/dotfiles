@@ -1,12 +1,13 @@
--- lsp server installation and configuration
+-- LSP server installation and configuration
 
--- lsp servers we want to use and their configuration
+-- LSP servers we want to use and their configuration
 -- see `:h lspconfig-all` for available servers and their settings
 local lsp_servers = {
   astro = {},
   expert = {},
   emmet_ls = {},
   eslint = {},
+  harper_ls = { filetypes = { 'asciidoc', 'gitcommit', 'html', 'markdown' } },
   lua_ls = {
     -- https://luals.github.io/wiki/settings/ | `:h nvim_get_runtime_file`
     Lua = { workspace = { library = vim.api.nvim_get_runtime_file('lua', true) } },
@@ -18,9 +19,9 @@ local lsp_servers = {
 }
 
 vim.pack.add({
-  'https://github.com/neovim/nvim-lspconfig', -- default configs for lsps
+  'https://github.com/neovim/nvim-lspconfig', -- default configs for LSPs
 
-  -- NOTE: if you'd rather install the lsps through your OS package manager you
+  -- NOTE: if you'd rather install the LSPs through your package manager you
   -- can delete the next three mason-related lines and their setup calls below.
   -- see `:h lsp-quickstart` for more details.
   'https://github.com/mason-org/mason.nvim', -- package manager
@@ -34,14 +35,14 @@ require('mason-tool-installer').setup {
   ensure_installed = vim.tbl_keys(lsp_servers),
 }
 
--- configure each lsp server on the table
+-- Configure each LSP server on the table
 -- to check what clients are attached to the current buffer, use
--- `:checkhealth vim.lsp`. to view default lsp keybindings, use `:h lsp-defaults`.
+-- `:checkhealth vim.lsp`. To view default LSP key bindings, use `:h lsp-defaults`.
 for server, config in pairs(lsp_servers) do
   vim.lsp.config(server, {
     settings = config,
 
-    -- only create the keymaps if the server attaches successfully
+    -- Only create the keymaps if the server attaches successfully
     on_attach = function(_, bufnr)
       vim.keymap.set('n', 'grd', require('fzf-lua').lsp_definitions, { buffer = bufnr, desc = 'Go to definition' })
       vim.keymap.set('n', 'gri', require('fzf-lua').lsp_implementations, { buffer = bufnr, desc = 'Go to implementation' })
@@ -56,4 +57,3 @@ for server, config in pairs(lsp_servers) do
     end,
   })
 end
-

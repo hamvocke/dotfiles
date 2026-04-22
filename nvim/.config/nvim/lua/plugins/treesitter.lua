@@ -27,6 +27,7 @@ local languages = {
   'svelte',
   'rust',
   'sql',
+  'terraform',
   'typescript',
   'vim',
   'vimdoc',
