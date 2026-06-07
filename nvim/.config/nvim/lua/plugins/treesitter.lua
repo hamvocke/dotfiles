@@ -8,6 +8,7 @@ local languages = {
   'astro',
   'bash',
   'comment',
+  'css',
   'diff',
   'dockerfile',
   'eex',

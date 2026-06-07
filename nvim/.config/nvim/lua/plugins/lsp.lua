@@ -4,6 +4,7 @@
 -- see `:h lspconfig-all` for available servers and their settings
 local lsp_servers = {
   astro = {},
+  ['css-lsp'] = {},
   expert = {},
   emmet_ls = {},
   eslint = {},
