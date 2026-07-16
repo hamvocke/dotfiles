@@ -74,6 +74,10 @@ img2pdf() {
   magick $1 -auto-orient $2
 }
 
+jwtdecode() {
+  echo $1 | jq -R 'split(".") | .[0],.[1] | @base64d | fromjson'
+}
+
 # load OS specific config
 case `uname` in
   Darwin)
