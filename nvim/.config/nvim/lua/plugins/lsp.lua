@@ -8,7 +8,6 @@ local lsp_servers = {
   expert = {},
   emmet_ls = {},
   eslint = {},
-  harper_ls = { filetypes = { 'asciidoc', 'gitcommit', 'html', 'markdown' } },
   lua_ls = {
     -- https://luals.github.io/wiki/settings/ | `:h nvim_get_runtime_file`
     Lua = { workspace = { library = vim.api.nvim_get_runtime_file('lua', true) } },
