@@ -74,6 +74,8 @@ img2pdf() {
   magick $1 -auto-orient $2
 }
 
+# Decode a JWT and print it. Requires `jq` to be installed.
+# Example: jwtdecode <some-jwt-here>
 jwtdecode() {
   echo $1 | jq -R 'split(".") | .[0],.[1] | @base64d | fromjson'
 }
@@ -143,7 +145,6 @@ if [ -x "$(command -v mise)" ]; then
   eval "$(mise activate zsh)"
 fi
 
-
 # Yazi
 if [ -x "$(command -v yazi)" ]; then
   function y() {
@@ -153,4 +154,9 @@ if [ -x "$(command -v yazi)" ]; then
     [ "$cwd" != "$PWD" ] && [ -d "$cwd" ] && builtin cd -- "$cwd"
     rm -f -- "$tmp"
   }
+fi
+
+# zoxide
+if [ -x "$(command -v zoxide)" ]; then
+  eval "$(zoxide init zsh)"
 fi
